@@ -1,31 +1,93 @@
 {
+  "policy_metadata": {
+    "version": "1.0.0",
+    "last_updated": "2024-05-22",
+    "jurisdiction": "India",
+    "compliance_status": "DPDP Act 2023 Compliant"
+  },
   "data_collection_policy": {
     "collect_minimum_data": true,
     "consent_required": true,
-    "anonymous_mode_available": true
+    "anonymous_mode_available": true,
+    "collection_purposes": [
+      "Emergency response dispatch",
+      "Legal aid eligibility verification",
+      "Cyber fraud incident reporting",
+      "Safety status updates for trusted contacts"
+    ],
+    "opt_out_availability": "Full - users can withdraw consent at any time as per Sec 6(4) of DPDP Act."
   },
-
-  "sensitive_data": [
-    "victim_identity",
-    "phone_number",
-    "address",
-    "bank_details",
-    "case_documents"
-  ],
-
-  "storage_policy": {
+  "sensitive_data_classification": {
+    "identity_data": [
+      "Full Name (Victim/Witness)",
+      "Aadhar/PAN/Voter ID (encrypted)",
+      "Gender and Age"
+    ],
+    "contact_data": [
+      "Phone Number",
+      "Secondary Emergency Contact",
+      "Email Address"
+    ],
+    "location_data": [
+      "GPS Real-time coordinates (Emergency mode only)",
+      "Residential Address",
+      "Incident Location"
+    ],
+    "financial_data": [
+      "Bank Account Details",
+      "Transaction IDs",
+      "UPI Handles"
+    ],
+    "evidence_data": [
+      "Case Documents",
+      "Audio/Video recordings",
+      "Screenshots of harassment"
+    ]
+  },
+  "storage_and_encryption_policy": {
     "encryption_required": true,
-    "encryption_standard": "AES-256",
-    "access_control": "role_based"
+    "encryption_standard": "AES-256 (At rest)",
+    "transit_security": "TLS 1.3 / SSL",
+    "access_control": {
+      "mechanism": "Role-Based Access Control (RBAC)",
+      "roles": [
+        "Victim (Full access to own data)",
+        "Legal Advisor (View only - upon consent)",
+        "Emergency Responder (View location/medical only)",
+        "System Admin (No access to decrypted sensitive data)"
+      ]
+    },
+    "database_location": "Sovereign Cloud (Servers physically located within India territory)"
   },
-
-  "retention_policy": {
+  "retention_and_deletion_policy": {
     "case_data_retention_days": 365,
-    "anonymous_logs_retention_days": 90
+    "anonymous_logs_retention_days": 90,
+    "automatic_deletion": true,
+    "manual_deletion_right": "Right to Erasure (Sec 12 of DPDP Act) - processed within 72 hours of request.",
+    "backup_cycle": "Daily encrypted incremental backups"
   },
-
+  "user_rights_framework": [
+    {
+      "right": "Right to Access",
+      "description": "User can download a summary of all data stored about them."
+    },
+    {
+      "right": "Right to Correction",
+      "description": "User can update inaccurate personal or case-related information."
+    },
+    {
+      "right": "Right to Nominate",
+      "description": "User can nominate a person to manage their data in case of death or incapacity."
+    },
+    {
+      "right": "Right to Grievance Redressal",
+      "description": "Direct portal to the Data Protection Officer (DPO) for complaints."
+    }
+  ],
   "legal_frameworks": [
-    "Digital Personal Data Protection Act 2023",
-    "Information Technology Act 2000"
+    "Digital Personal Data Protection Act (DPDP) 2023",
+    "Information Technology Act 2000 (Section 43A and 72A)",
+    "CERT-In Cyber Security Directions 2022",
+    "Aadhar Act (Targeted Delivery of Financial and Other Subsidies) 2016"
   ]
 }

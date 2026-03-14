@@ -1,20 +1,167 @@
 {
   "cyber_fraud": {
-    "message": "If money was stolen through online fraud, follow these steps immediately:",
-    "steps": [
-      "Call your bank immediately",
-      "Report on cybercrime portal",
-      "Save transaction screenshots"
+    "incident_type": "Cyber Fraud / UPI Scam",
+    "description": "Unauthorized online transaction, UPI fraud, OTP scam, phishing, or bank fraud.",
+    
+    "immediate_steps_0_24_hours": [
+      "Immediately contact your bank customer support and request to freeze or block the affected account.",
+      "Call the national cybercrime helpline: 1930.",
+      "Report the fraud at https://cybercrime.gov.in.",
+      "Take screenshots of transaction details, SMS alerts, and bank statements.",
+      "Preserve evidence such as phone numbers, links, messages, or emails used by the scammer.",
+      "Visit the nearest police station and file a First Information Report (FIR).",
+      "Inform the UPI provider or payment app used (Google Pay, PhonePe, Paytm etc)."
     ],
-    "helpline": "1930"
+
+    "expected_response_24_hours": {
+      "bank_action": "Bank may attempt to freeze the transferred funds if they are still in the destination account.",
+      "cybercrime_portal": "Complaint is registered and assigned to cybercrime investigators.",
+      "police_station": "Police should register FIR under IT Act and IPC fraud sections."
+    },
+
+    "expected_response_48_hours": {
+      "investigation_status": "Cybercrime team may start tracing the receiving bank account and IP address used in the transaction.",
+      "bank_followup": "Banks may initiate reversal process if funds are recoverable.",
+      "victim_expectation": "Victim should receive acknowledgment of complaint and case reference number."
+    },
+
+    "legal_sections_applied": [
+      "IT Act Section 66C - Identity Theft",
+      "IT Act Section 66D - Cheating by personation using computer resources",
+      "IPC Section 420 - Cheating and Fraud"
+    ],
+
+    "government_expected_action_time": {
+      "FIR_registration": "Immediately or within the same day.",
+      "initial_investigation": "Within 48 hours.",
+      "bank_account_trace": "3 to 7 days depending on bank response.",
+      "full_investigation": "30 to 90 days."
+    },
+
+    "if_police_do_not_act": {
+      "step_1": "Send written complaint to Superintendent of Police (SP).",
+      "step_2": "Submit complaint online to cybercrime portal again with FIR refusal evidence.",
+      "step_3": "File complaint before Magistrate under CrPC Section 156(3)."
+    },
+
+    "escalation_contacts": [
+      {
+        "role": "Superintendent of Police",
+        "contact_type": "email"
+      },
+      {
+        "role": "Cyber Crime Department",
+        "contact_type": "online_portal"
+      },
+      {
+        "role": "District Magistrate",
+        "contact_type": "official_email"
+      }
+    ],
+
+    "investigation_timeline_estimate": {
+      "initial_case_registration": "1 day",
+      "digital evidence collection": "7 days",
+      "bank coordination": "14 days",
+      "case progress review": "30 days"
+    }
   },
+
   "domestic_violence": {
-    "message": "If you are in danger, move to a safe place immediately.",
-    "steps": [
-      "Call women helpline",
-      "Contact nearby police station",
-      "Preserve evidence"
+    "incident_type": "Domestic Violence",
+
+    "immediate_steps_0_24_hours": [
+      "Move to a safe location away from the abuser if possible.",
+      "Call emergency services at 112.",
+      "Call Women Helpline at 1091.",
+      "Seek help from trusted friends or relatives.",
+      "Visit nearest police station and file complaint.",
+      "Request protection order under Domestic Violence Act."
     ],
-    "helpline": "1091"
+
+    "expected_response_24_hours": {
+      "police_action": "Police should register complaint and provide immediate protection if danger exists.",
+      "legal_action": "Protection officer may be assigned.",
+      "medical_help": "Victim can receive medical support and documentation."
+    },
+
+    "expected_response_48_hours": {
+      "court_action": "Protection order request may be processed.",
+      "police_followup": "Police may question accused and gather evidence."
+    },
+
+    "legal_sections_applied": [
+      "Protection of Women from Domestic Violence Act 2005",
+      "IPC Section 498A - Cruelty by husband or relatives"
+    ],
+
+    "government_expected_action_time": {
+      "complaint_registration": "Immediately",
+      "protection_order": "Within 48 hours",
+      "court_hearing": "Within 7 days"
+    },
+
+    "if_police_do_not_act": {
+      "step_1": "Report the issue to Superintendent of Police.",
+      "step_2": "Contact State Women Commission.",
+      "step_3": "File complaint before Magistrate."
+    }
+  },
+
+  "sexual_harassment": {
+    "incident_type": "Sexual Harassment / Stalking",
+
+    "immediate_steps_0_24_hours": [
+      "Move to a safe location.",
+      "Contact police helpline 112.",
+      "Save messages, photos, or evidence of harassment.",
+      "Report to nearest police station."
+    ],
+
+    "expected_response_24_hours": {
+      "police_action": "Police should register FIR.",
+      "investigation": "Statements of victim recorded."
+    },
+
+    "expected_response_48_hours": {
+      "suspect_action": "Police may summon or arrest suspect.",
+      "case_documentation": "Evidence review and witness statements."
+    },
+
+    "legal_sections_applied": [
+      "IPC Section 354A - Sexual Harassment",
+      "IPC Section 354D - Stalking"
+    ],
+
+    "government_expected_action_time": {
+      "FIR_registration": "Immediate",
+      "suspect_interrogation": "48 hours",
+      "charge_sheet": "60 to 90 days"
+    }
+  },
+
+  "police_refusal": {
+    "incident_type": "Police Refused FIR",
+
+    "immediate_steps_0_24_hours": [
+      "Request written reason for refusal.",
+      "Record date, time, and officer name.",
+      "Submit written complaint to Station House Officer."
+    ],
+
+    "expected_response_48_hours": {
+      "escalation": "Send complaint to Superintendent of Police."
+    },
+
+    "legal_sections_applied": [
+      "CrPC Section 154 - FIR Registration",
+      "CrPC Section 156(3) - Magistrate power to order investigation"
+    ],
+
+    "if_police_do_not_act": {
+      "step_1": "Send complaint to SP office.",
+      "step_2": "Approach Magistrate court.",
+      "step_3": "File complaint to Human Rights Commission."
+    }
   }
 }

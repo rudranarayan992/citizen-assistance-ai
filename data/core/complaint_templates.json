@@ -1,14 +1,602 @@
 {
-  "cyber_fraud": {
-    "title": "Cyber Fraud Complaint",
-    "template": "I am writing to report a cyber fraud incident that occurred on {date} at {time}. An amount of ₹{amount} was fraudulently transferred from my account. I request immediate investigation and action."
+  "mobile_theft": {
+    "title": "Mobile Phone Theft or Snatching",
+    "template": "I am reporting the theft/snatching of my mobile phone ({brand_model}) that occurred on {date} at {time} near {location}. IMEI number: {imei}. I request you to block the device and register an FIR/LDR."
+  },
+  "loss_identity_docs": {
+    "title": "Loss of Identity Documents",
+    "template": "I am writing to report the loss of my {document_type} (Aadhar/PAN/Voter ID) which went missing on {date} near {location}. I request a lost article report to apply for a duplicate."
+  },
+  "residential_burglary": {
+    "title": "Residential Burglary Complaint",
+    "template": "I wish to report a house-breaking incident at my residence {address} which occurred between {start_time} and {end_time} on {date}. Valuable items including {items} are missing. Requesting immediate investigation."
+  },
+  "vehicle_theft": {
+    "title": "Motor Vehicle Theft",
+    "template": "My vehicle ({vehicle_type}), Registration No: {reg_no}, was stolen from {location} on {date} at approximately {time}. I request the registration of an FIR for insurance and recovery purposes."
+  },
+  "pickpocketing": {
+    "title": "Pickpocketing in Public Transport",
+    "template": "I am reporting a pickpocketing incident that occurred on {date} while traveling in {transport_details} at {location}. My {item_stolen} was stolen from my pocket/bag. Requesting investigation."
+  },
+  "chain_snatching": {
+    "title": "Chain Snatching Complaint",
+    "template": "I was a victim of chain snatching on {date} at {time} near {location}. The item was a {description_of_jewelry}. The accused fled on a {vehicle_description}. Requesting immediate action."
+  },
+  "atm_skimming": {
+    "title": "ATM Card Skimming/Cloning",
+    "template": "I am reporting unauthorized withdrawals from my bank account via ATM skimming. An amount of ₹{amount} was debited on {date} without my card leaving my possession. Requesting investigation and CCTV footage review."
+  },
+  "bank_withdrawal_phishing": {
+    "title": "Fraudulent Bank Withdrawal via Phishing",
+    "template": "An amount of ₹{amount} was fraudulently transferred from my bank account on {date} after I clicked a suspicious link/received a call. I request immediate investigation and a freeze on the recipient's account."
+  },
+  "credit_card_fraud": {
+    "title": "Credit Card Fraud",
+    "template": "Unauthorized transactions totaling ₹{amount} were made on my credit card {card_number} on {date}. I have blocked the card and request an investigation into these unauthorized charges."
+  },
+  "ecommerce_scam": {
+    "title": "E-commerce Fraud Complaint",
+    "template": "I have been defrauded by an online seller on {website_app}. I paid ₹{amount} for {product} on {date}, but the item was never delivered and the seller is unreachable. Requesting action against the fraudulent entity."
+  },
+  "lost_wallet": {
+    "title": "Lost Wallet Report",
+    "template": "I am reporting the loss of my wallet on {date} at {location}. It contained ₹{cash_amount} and cards including {card_details}. Requesting an official report for document re-issuance."
+  },
+  "theft_electricity": {
+    "title": "Theft of Electricity (Hooking)",
+    "template": "I wish to report illegal electricity hooking/theft occurring at {location}. This is causing a safety hazard and loss to the department. Requesting an inspection and legal action."
+  },
+  "theft_water": {
+    "title": "Theft of Water (Illegal Connection)",
+    "template": "Reporting illegal water motor connections and theft of water at {location}. This is affecting the legitimate supply in the area. Requesting immediate disconnection and action."
+  },
+  "shop_lifting": {
+    "title": "Shop-lifting or Inventory Theft",
+    "template": "I am reporting a theft of inventory/shop-lifting incident at {shop_name} on {date}. The stolen items include {items_list}. CCTV footage of the suspect is available for investigation."
+  },
+  "fake_currency": {
+    "title": "Fake Currency Circulation",
+    "template": "I have come into possession of counterfeit currency notes of denomination {denomination} at {location} on {date}. I am surrendering the notes and request investigation into the source."
+  },
+  "cheque_bounce": {
+    "title": "Cheque Bounce Case",
+    "template": "I am filing a complaint regarding a cheque bounce (Cheque No: {cheque_no}) for the amount of ₹{amount} issued by {issuer_name}. The cheque was returned due to {reason}. Requesting legal proceedings."
+  },
+  "property_doc_forgery": {
+    "title": "Property Document Forgery",
+    "template": "I am reporting the forgery of property documents related to {property_details}. Unauthorized persons have created fake deeds to claim ownership. Requesting forensic verification and FIR."
+  },
+  "land_grabbing": {
+    "title": "Land Grabbing or Illegal Encroachment",
+    "template": "My property at {address} has been illegally encroached upon/grabbed by {name/group} on {date}. I request immediate removal of the encroachment and police protection."
+  },
+  "chit_fund_fraud": {
+    "title": "Fraud by Chit Fund Company",
+    "template": "I have been defrauded by {company_name} in a chit fund scheme. I invested ₹{total_investment}, but the company has closed its office and the directors are absconding. Requesting recovery and arrest."
+  },
+  "online_job_scam": {
+    "title": "Online Job Scam",
+    "template": "I was defrauded of ₹{amount} by a fake recruitment agency {agency_name} promising a work-from-home job on {date}. They are now unreachable. Requesting investigation into the bank account provided."
+  },
+  "lottery_scam": {
+    "title": "Lottery Scam (SMS/WhatsApp)",
+    "template": "I received a fraudulent message claiming I won a lottery/prize from {name}. I was tricked into paying ₹{processing_fee} as 'processing fees'. Requesting action against the numbers {phone_numbers}."
+  },
+  "construction_material_theft": {
+    "title": "Theft of Construction Materials",
+    "template": "Theft of construction materials including {materials} occurred at my site {location} on the night of {date}. Requesting investigation and recovery."
+  },
+  "missing_livestock": {
+    "title": "Missing Livestock (Cattle/Poultry)",
+    "template": "I am reporting that my {animal_type} (Count: {number}) has been missing/stolen from {location} since {date}. Any information or assistance in recovery is requested."
+  },
+  "bicycle_theft": {
+    "title": "Bicycle Theft",
+    "template": "My bicycle ({brand/color}) was stolen from the public stand at {location} on {date} between {time_range}. Requesting search and check of local scrap shops."
+  },
+  "laptop_gadget_theft": {
+    "title": "Laptop or Electronic Gadget Theft",
+    "template": "My {gadget_type} ({brand/serial_no}) was stolen from {office_cafe_location} on {date} at {time}. I request an FIR to block the device and check CCTV footage."
+  },
+  "insurance_fraud": {
+    "title": "Insurance Fraud (Fake Claims)",
+    "template": "I am reporting a suspected fake insurance claim made by {name} regarding {policy_details}. The claim is based on fabricated evidence of {incident}. Requesting verification."
+  },
+  "extortion_threats": {
+    "title": "Extortion Threats (Vasooli)",
+    "template": "I am receiving extortion threats from {name/group} demanding ₹{amount} at {location/phone}. They have threatened me with {consequences}. I request immediate protection and arrest."
+  },
+  "illegal_subletting": {
+    "title": "Illegal Subletting of Property",
+    "template": "My tenant at {address} has illegally subletted the property to unauthorized persons without my consent. Requesting intervention to clear the premises as per the rental agreement."
+  },
+  "railway_baggage_theft": {
+    "title": "Theft of Personal Baggage at Railway Station",
+    "template": "My baggage containing {items} was stolen at {station_name} / on Train No {train_no} on {date}. Requesting GRP assistance and CCTV check."
+  },
+  "unauthorized_digital_signature": {
+    "title": "Unauthorized Use of Digital Signature",
+    "template": "I am reporting the unauthorized use of my Digital Signature Certificate (DSC) on {date} for {transaction/document}. This was not authorized by me. Requesting investigation into the IP address used."
+  },
+  "crypto_fraud": {
+    "title": "Cryptocurrency Investment Fraud",
+    "template": "I have been defrauded of {amount_crypto} (equivalent to ₹{amount_inr}) by a fake investment platform {platform_name}. I request the cyber cell to track the wallet address {wallet_address}."
+  },
+  "old_coin_scam": {
+    "title": "Old Coin or Stamp Sale Scam",
+    "template": "I was cheated of ₹{amount} by an individual on {platform} who promised to facilitate the sale of old coins/stamps. The suspect is now demanding 'RBI clearance fees'. Requesting action."
+  },
+  "travel_agent_fraud": {
+    "title": "Fraud by Travel Agent (Fake Visa/Ticket)",
+    "template": "The travel agent {agent_name} has provided me with a fake visa/ticket for {destination} and charged me ₹{amount}. I am now stranded and the agent is unreachable. Requesting FIR."
+  },
+  "partnership_fund_misappropriation": {
+    "title": "Misappropriation of Partnership Funds",
+    "template": "My business partner {partner_name} has misappropriated funds to the tune of ₹{amount} from our firm {firm_name} without authorization. Requesting an audit and legal action."
+  },
+  "solar_panel_theft": {
+    "title": "Theft of Solar Panels or Batteries",
+    "template": "Theft of solar panels and street batteries occurred at {location} on {date}. These are public/private assets worth ₹{amount}. Requesting investigation."
+  },
+  "social_media_hacking": {
+    "title": "Social Media Account Hacking",
+    "template": "My {platform} account (@{username}) has been hacked and accessed unauthorizedly on {date}. The hacker has changed my recovery details. I request assistance in securing the account and investigating the breach."
+  },
+  "unauthorized_email_access": {
+    "title": "Unauthorized Email Access",
+    "template": "My email account {email_address} was accessed unauthorizedly from IP {ip_if_known} on {date}. Sensitive data may have been compromised. Requesting forensic investigation."
+  },
+  "cyberstalking": {
+    "title": "Cyberstalking/Online Harassment",
+    "template": "I am being repeatedly harassed and stalked online by {username/id} on {platform}. I have received unwanted messages and threats since {date}. I request immediate intervention and protection."
+  },
+  "cyberbullying": {
+    "title": "Cyberbullying or Online Harassment",
+    "template": "I am reporting an instance of cyberbullying on {platform} where {user_id} is posting derogatory and harmful content about me. Requesting the removal of content and action against the user."
+  },
+  "fake_profile_creation": {
+    "title": "Creation of Fake Profile",
+    "template": "A fake profile using my name and photographs has been created on {platform} (URL: {profile_url}). This profile is being used to malign my reputation. Requesting its immediate takedown."
+  },
+  "identity_theft_loans": {
+    "title": "Identity Theft for Loans",
+    "template": "I discovered that someone has used my personal information (Aadhar/PAN) to obtain unauthorized loans from {app/bank_name}. I did not apply for these. Requesting investigation into identity theft."
+  },
+  "revenge_porn": {
+    "title": "Revenge Porn (Private Image Sharing)",
+    "template": "Private and sensitive images/videos of me are being circulated without my consent on {platform} by {name_if_known}. I request immediate removal under IT Act and arrest of the perpetrator."
+  },
+  "whatsapp_defamation": {
+    "title": "Defamation via Social Media/WhatsApp",
+    "template": "Derogatory and false information about me is being circulated in WhatsApp groups/social media by {name/number}. This is causing severe damage to my reputation. Requesting legal action."
+  },
+  "sextortion": {
+    "title": "Sextortion Blackmail Complaint",
+    "template": "I am being blackmailed by an individual using private images/video calls on {platform}. They are demanding ₹{amount}. I request immediate cyber-cell intervention to stop the harassment."
+  },
+  "ransomware_attack": {
+    "title": "Malware/Ransomware Attack",
+    "template": "My business computer systems at {location} have been locked by ransomware. The attackers are demanding {amount} in Bitcoin. Requesting assistance from the cyber forensics team."
+  },
+  "data_breach": {
+    "title": "Data Breach of Company Code/Data",
+    "template": "I am reporting a data breach at {company_name} where proprietary source code and client data were stolen on {date}. Requesting investigation into the source of the leak."
+  },
+  "domain_hijacking": {
+    "title": "Domain Hijacking",
+    "template": "My website domain {domain_url} was unauthorizedly transferred to another registrar on {date}. This has disrupted my business operations. Requesting recovery assistance."
+  },
+  "govt_phishing": {
+    "title": "Phishing Masquerading as Govt Official",
+    "template": "I received an email/SMS from {sender} pretending to be from {government_department} asking for sensitive details. This appears to be a phishing attempt. Requesting investigation."
+  },
+  "upi_fraud": {
+    "title": "UPI Fraud Complaint",
+    "template": "I was tricked into a fraudulent UPI transaction of ₹{amount} on {date} via a {collect_request/QR_scan}. The transaction ID is {txn_id}. Requesting a reversal and investigation of the recipient's account."
+  },
+  "sim_swap_fraud": {
+    "title": "SIM Swap Fraud",
+    "template": "My SIM card was deactivated without my request on {date}, and unauthorized bank transactions occurred shortly after. This appears to be a SIM swap fraud. Requesting investigation."
+  },
+  "cctv_hacking": {
+    "title": "Unauthorized CCTV Hacking",
+    "template": "My private CCTV cameras at {location} have been hacked and the feed is being accessed by unauthorized persons. Requesting a security audit and investigation."
+  },
+  "online_gaming_fraud": {
+    "title": "Online Gaming Fraud",
+    "template": "My virtual assets worth ₹{amount} in the game {game_name} were stolen through a phishing link on {date}. Requesting investigation into the user {id}."
+  },
+  "copyright_infringement": {
+    "title": "Copyright Infringement (Piracy)",
+    "template": "My copyrighted work {work_title} is being distributed illegally on {website_url} without my permission. I request a takedown and action against the site owner."
+  },
+  "csam_distribution": {
+    "title": "Distribution of CSAM",
+    "template": "I am reporting the distribution of child sexual abuse material on the platform {platform} at URL {url}. This is a serious crime requiring immediate action."
+  },
+  "wifi_hacking": {
+    "title": "Wi-fi Hacking / Bandwidth Theft",
+    "template": "My private Wi-fi network at {location} is being hacked and used by unauthorized persons for suspicious activities. Requesting investigation."
+  },
+  "vishing_bank_impersonation": {
+    "title": "Impersonating Bank Official (Vishing)",
+    "template": "I received a call from {phone_number} where the caller impersonated a bank official from {bank_name} to extract my OTP. Requesting to block this number and investigate."
+  },
+  "kyc_update_fraud": {
+    "title": "KYC Update Fraud",
+    "template": "I was defrauded of ₹{amount} on {date} by a person claiming to update my KYC for {bank/wallet}. They used a remote access app to steal funds. Requesting investigation."
+  },
+  "olx_qr_scam": {
+    "title": "OLX/Marketplace QR Code Scam",
+    "template": "While trying to sell an item on OLX, the buyer {name} sent me a QR code claiming it was to 'receive' money, but it debited ₹{amount} from my account. Requesting action."
+  },
+  "remote_access_fraud": {
+    "title": "Remote Access Fraud (AnyDesk/TeamViewer)",
+    "template": "I was tricked into installing {app_name} by a caller claiming to be from {company}. They took control of my phone and transferred ₹{amount}. Requesting immediate investigation."
+  },
+  "dating_app_scam": {
+    "title": "Dating App Scam (Catfishing)",
+    "template": "I was defrauded of ₹{amount} by a person I met on {dating_app}. They used a fake identity and fabricated an emergency to borrow money. Requesting investigation into the account {account_details}."
+  },
+  "physical_assault": {
+    "title": "Physical Assault Complaint",
+    "template": "I was physically assaulted by {name/description} on {date} at {time} at {location}. I have sustained injuries and request medical examination and legal action under the relevant sections of the law."
+  },
+  "grievous_hurt": {
+    "title": "Grievous Hurt (Serious Injury)",
+    "template": "I am reporting an incident of grievous hurt where {name} caused {fracture/serious_injury} to me on {date} at {location}. Requesting immediate arrest and investigation."
   },
   "domestic_violence": {
-    "title": "Domestic Violence Complaint",
-    "template": "I am filing a complaint regarding domestic violence that occurred on {date}. I request police protection and legal action under applicable laws."
+    "title": "Domestic Violence Complaint (498A)",
+    "template": "I am filing a complaint regarding domestic violence and cruelty by my husband and his relatives at {address}. The incidents occurred on {date}. I request police protection and action."
   },
-  "sexual_harassment": {
-    "title": "Sexual Harassment Complaint",
-    "template": "I would like to report a case of sexual harassment that occurred on {date}. I request immediate investigation and protection."
+  "workplace_sexual_harassment": {
+    "title": "Sexual Harassment at Workplace",
+    "template": "I am filing a complaint of sexual harassment against {person_name} at my workplace {office_name}. The incident occurred on {date}. Requesting investigation by the ICC and police."
+  },
+  "eve_teasing": {
+    "title": "Eve-teasing or Molestation",
+    "template": "I was subjected to eve-teasing/molestation by {description} at {location} on {date} at {time}. Requesting increased patrolling and investigation."
+  },
+  "physical_stalking": {
+    "title": "Stalking (Physical)",
+    "template": "I am being physically followed and stalked by {description/name} near my {home/office} since {date}. This is causing me great distress and fear. Requesting intervention."
+  },
+  "phone_threats": {
+    "title": "Threatening over the Phone",
+    "template": "I am receiving life-threatening calls from {phone_number} since {date}. The caller is using abusive language and threatening me with {details}. Requesting protection."
+  },
+  "abusive_language_public": {
+    "title": "Use of Abusive Language in Public",
+    "template": "I was publicly insulted and abused by {name} at {location} on {date}. This was done in the presence of witnesses {witness_names}. Requesting action for public mischief."
+  },
+  "wrongful_restraint": {
+    "title": "Wrongful Restraint",
+    "template": "I was wrongfully restrained and prevented from proceeding in a direction I had a right to go by {name} at {location} on {date}. Requesting legal action."
+  },
+  "kidnapping_ransom": {
+    "title": "Kidnapping for Ransom",
+    "template": "I am reporting the kidnapping of {person_name} from {location} on {date}. We have received a ransom call demanding ₹{amount}. Requesting immediate rescue operation."
+  },
+  "missing_person": {
+    "title": "Missing Person Report (Adult)",
+    "template": "I am reporting that {person_name}, aged {age}, has been missing from {location} since {date} {time}. They were last seen wearing {clothes}. I request an immediate search."
+  },
+  "missing_child": {
+    "title": "Missing Child Report",
+    "template": "My child {name}, aged {age}, has gone missing from {location} on {date} at {time}. Requesting immediate 'Track Child' alert and search operation."
+  },
+  "elderly_abandonment": {
+    "title": "Abandonment of Elderly Parents",
+    "template": "I wish to report the abandonment of {parent_names} by their children at {location}. They are in need of care and maintenance. Requesting action under Maintenance of Parents Act."
+  },
+  "caste_discrimination": {
+    "title": "Caste-based Discrimination (SC/ST Act)",
+    "template": "I was subjected to caste-based insults and discrimination by {name} at {location} on {date}. Requesting the registration of an FIR under the SC/ST Prevention of Atrocities Act."
+  },
+  "criminal_intimidation": {
+    "title": "Criminal Intimidation",
+    "template": "I am being criminally intimidated by {name} who is threatening to cause injury to my person/reputation/property if I do not {action}. Requesting protection."
+  },
+  "attempt_to_murder": {
+    "title": "Attempt to Murder",
+    "template": "An attempt was made on my life by {name} using {weapon} at {location} on {date}. I survived but request immediate arrest of the accused for attempt to murder."
+  },
+  "dowry_harassment": {
+    "title": "Dowry Harassment",
+    "template": "I am being harassed and tortured for dowry by my in-laws at {address}. They are demanding ₹{amount} and {items}. Requesting immediate legal intervention."
+  },
+  "cruelty_by_relatives": {
+    "title": "Cruelty by Spouse or Relatives",
+    "template": "I am reporting systematic mental and physical cruelty by {names} at {address} since {date}. Requesting investigation and protection."
+  },
+  "voyeurism": {
+    "title": "Voyeurism (Hidden Cameras)",
+    "template": "I discovered a hidden camera in the {changing_room/trial_room/washroom} at {location} on {date}. This is a gross violation of privacy. Requesting seizure of the device and arrest."
+  },
+  "acid_attack_threats": {
+    "title": "Acid Attack Threats",
+    "template": "I am receiving specific threats of an acid attack from {name/description} since {date}. I request immediate security and preventive action against the suspect."
+  },
+  "illegal_detention": {
+    "title": "Illegal Detention / Confinement",
+    "template": "I/My relative {name} is being illegally detained and confined against their will at {location} by {names}. Requesting immediate rescue."
+  },
+  "human_trafficking": {
+    "title": "Human Trafficking Complaint",
+    "template": "I have information regarding a human trafficking ring operating from {location} where people are being held for {purpose}. Requesting a raid and rescue operation."
+  },
+  "forced_labor": {
+    "title": "Forced Labor or Bonded Labor",
+    "template": "I am reporting the practice of forced/bonded labor at {location} where workers are being held against their will and denied wages. Requesting intervention."
+  },
+  "child_labor": {
+    "title": "Child Labor Complaint",
+    "template": "I wish to report the employment of children at {business_name/location}. This is a violation of the Child Labor Act. I request the authorities to conduct a rescue operation."
+  },
+  "medical_negligence": {
+    "title": "Medical Negligence Complaint",
+    "template": "I am filing a complaint against {doctor_hospital} for gross medical negligence during the treatment of {patient_name} on {date}, resulting in {consequence}. Requesting medical board review."
+  },
+  "bigamy": {
+    "title": "Bigamy Complaint",
+    "template": "I am reporting that my spouse {name} has entered into a second marriage with {person} on {date} while our marriage is still legally subsisting. Requesting legal action."
+  },
+  "obscene_acts_public": {
+    "title": "Obscene Acts in Public",
+    "template": "I am reporting obscene acts and gestures being performed in public by {description} at {location} on {date}. This is causing public annoyance."
+  },
+  "communal_hatred": {
+    "title": "Incitement of Communal Hatred",
+    "template": "I am reporting a speech/social media post by {name} that is inciting communal hatred and disharmony among communities on {date}. Requesting preventive action."
+  },
+  "newborn_abandonment": {
+    "title": "Abandonment of Newborn Infant",
+    "template": "An abandoned newborn infant was found at {location} on {date} at {time}. Requesting immediate medical care for the infant and investigation into the parents."
+  },
+  "restraining_order_violation": {
+    "title": "Violation of Restraining Order",
+    "template": "The individual {name} has violated the restraining order issued by {court} on {date} by attempting to contact/approach me at {location}. Requesting arrest for contempt."
+  },
+  "noise_pollution": {
+    "title": "Noise Pollution (Loudspeakers)",
+    "template": "I am complaining about illegal use of loudspeakers/construction noise at {location} occurring on {date} after 10 PM. This is a violation of noise pollution norms."
+  },
+  "illegal_parking": {
+    "title": "Illegal Parking Blocking Entrance",
+    "template": "A vehicle with Reg No {reg_no} is parked illegally blocking the entrance of {address} since {time}. It is causing a major obstruction. Requesting towing."
+  },
+  "public_intoxication": {
+    "title": "Public Drinking / Intoxication Nuisance",
+    "template": "I am reporting a group of individuals drinking in public and causing a nuisance at {location} on {date} evening. This is making the area unsafe for residents."
+  },
+  "public_gambling": {
+    "title": "Gambling in Public Places",
+    "template": "Illegal gambling activities are taking place in public view at {location} on {date}. Requesting a raid and action under the Public Gambling Act."
+  },
+  "drug_peddling": {
+    "title": "Drug Peddling in Locality",
+    "template": "I wish to provide information regarding suspected drug peddling activities occurring near {landmark/location} routinely at {time}. Requesting patrolling."
+  },
+  "bootlegging": {
+    "title": "Illegal Liquor Sales (Bootlegging)",
+    "template": "Illegal sale of liquor is occurring at {location} without a license. This is attracting anti-social elements to the neighborhood. Requesting action."
+  },
+  "rash_driving": {
+    "title": "Rash and Negligent Driving",
+    "template": "I am reporting a vehicle {reg_no} for extremely rash and negligent driving at {location} on {date}. It nearly caused multiple accidents. Requesting a fine/challan."
+  },
+  "hit_and_run": {
+    "title": "Hit and Run Accident",
+    "template": "A hit and run accident occurred at {location} on {date} where a vehicle ({description}) hit {victim} and fled. Requesting CCTV review to identify the vehicle."
+  },
+  "footpath_encroachment": {
+    "title": "Encroachment of Public Footpath",
+    "template": "The public footpath at {location} has been encroached upon by {vendors/shops}, making it impossible for pedestrians to walk. Requesting an eviction drive."
+  },
+  "garbage_dumping": {
+    "title": "Illegal Dumping of Garbage/Debris",
+    "template": "Construction debris and garbage are being illegally dumped at {location} on {date}. This is causing a health hazard. Requesting a penalty on the violator."
+  },
+  "animal_cruelty": {
+    "title": "Animal Cruelty Complaint",
+    "template": "I am reporting an instance of severe animal cruelty at {location} where {name} was seen beating/starving {animal}. Requesting action under the PCA Act."
+  },
+  "stray_cattle_nuisance": {
+    "title": "Nuisance Caused by Stray Cattle",
+    "template": "Stray cattle are causing major traffic hazards and safety issues at {location}. Requesting the municipal authorities to relocate them to a shelter."
+  },
+  "dangerous_pets": {
+    "title": "Dangerous Pets / Dog Bite Case",
+    "template": "My {relative/self} was bitten by a pet dog belonging to {owner_name} at {location} on {date}. The owner was negligent in restraining the animal. Requesting action."
+  },
+  "unauthorized_protest": {
+    "title": "Unauthorized Protest or Rally",
+    "template": "An unauthorized rally/protest is taking place at {location} on {date}, causing severe traffic disruption and public inconvenience. Requesting dispersal."
+  },
+  "fake_news_rumors": {
+    "title": "Spreading Fake News / Rumors",
+    "template": "I am reporting the spread of dangerous fake news regarding {topic} by {source} on {date}. This is likely to cause public mischief and panic. Requesting action."
+  },
+  "fire_safety_violation": {
+    "title": "Violation of Fire Safety Norms",
+    "template": "The building at {address} is in gross violation of fire safety norms, lacking functional extinguishers and clear exits. Requesting an urgent inspection."
+  },
+  "illegal_tree_cutting": {
+    "title": "Illegal Cutting of Trees",
+    "template": "Trees are being illegally cut down at {location} on {date} without permission from the Forest Department. Requesting an immediate stop and penalty."
+  },
+  "water_wastage": {
+    "title": "Water Wastage / Illegal Boring",
+    "template": "Illegal boring and massive wastage of water is occurring at {address}. This is violating environmental norms and ground water regulations. Requesting action."
+  },
+  "transport_overcharging": {
+    "title": "Overcharging by Auto/Taxi Drivers",
+    "template": "The driver of vehicle {reg_no} refused to go by meter and demanded ₹{amount} for the trip to {destination}. Requesting a penalty for overcharging."
+  },
+  "fraudulent_weights": {
+    "title": "Fraudulent Weights in Market",
+    "template": "The vendor at {shop_name/location} is using fraudulent weights and measures for {product}. Requesting an inspection by the Weights and Measures department."
+  },
+  "food_adulteration": {
+    "title": "Adulteration of Food or Milk",
+    "template": "I suspect that the {product} being sold at {location} is adulterated and unfit for consumption. Requesting a sample collection for laboratory testing."
+  },
+  "expired_medicines": {
+    "title": "Sale of Expired Medicines",
+    "template": "The pharmacy at {location} sold me expired medicines on {date}. This is a serious threat to life. Requesting immediate cancellation of their license."
+  },
+  "lockdown_violation": {
+    "title": "Violation of Lockdown / Curfew",
+    "template": "A large gathering/business operation is violating the prevailing curfew/lockdown orders at {location} on {date}. Requesting police intervention."
+  },
+  "banned_plastic": {
+    "title": "Use of Banned Plastic Items",
+    "template": "The use of banned single-use plastic is rampant at {location}. Requesting the authorities to conduct a surprise check and levy fines."
+  },
+  "illegal_construction": {
+    "title": "Illegal Construction without Permit",
+    "template": "Construction is being carried out at {address} without the necessary building permits from the municipality. Requesting a stay on the work."
+  },
+  "obstruction_public_servant": {
+    "title": "Obstruction of Public Servant",
+    "template": "I was obstructed from performing my official duties by {name} at {location} on {date}. Requesting the registration of a case under Section 186 IPC."
+  },
+  "false_info_police": {
+    "title": "Giving False Information to Police",
+    "template": "I am reporting that {name} has provided false information and fabricated evidence to the police regarding {case_details}. Requesting action for misleading the law."
+  },
+  "drunk_driving": {
+    "title": "Drunk Driving Complaint",
+    "template": "A driver of vehicle {reg_no} is driving in an intoxicated state at {location}. This is a major threat to public safety. Requesting immediate intercept."
+  },
+  "tinted_glass_violation": {
+    "title": "Violation of Tinted Glass Rules",
+    "template": "Vehicle {reg_no} has black tinted glass beyond the permissible limits. Requesting the traffic police to issue a challan and ensure removal."
+  },
+  "high_beam_air_horn": {
+    "title": "Using High-Beam or Air Horns",
+    "template": "Constant use of high-beam lights and illegal air horns by vehicles at {location} is causing extreme distress to residents and drivers. Requesting enforcement."
+  },
+  "passport_verification": {
+    "title": "Police Verification for Passport",
+    "template": "I am requesting the status of my passport police verification (File No: {file_no}). My application was submitted on {date}. Please expedite the process."
+  },
+  "tenant_verification": {
+    "title": "Tenant Verification Request",
+    "template": "I am submitting the details for police verification of my new tenant, {tenant_name}, who is moving into {address} on {date}. Please provide the necessary clearance."
+  },
+  "servant_verification": {
+    "title": "Domestic Help/Servant Verification",
+    "template": "I wish to conduct a police verification for my domestic help {name} who joined on {date}. The ID documents are attached for your review."
+  },
+  "character_certificate": {
+    "title": "Character Certificate for Job",
+    "template": "I require a character/conduct certificate for employment purposes at {company_name}. I have been a resident of {address} for {years} years. Requesting issuance."
+  },
+  "loss_educational_cert": {
+    "title": "Loss of School/College Certificates",
+    "template": "I am reporting the loss of my {degree/class} certificates which were lost on {date} at {location}. I need an official report to apply for duplicates."
+  },
+  "loss_property_deed": {
+    "title": "Loss of Property Sale Deed",
+    "template": "I am reporting the loss of my original Property Sale Deed (Document No: {doc_no}) which was lost on {date} at {location}. I require an official report for duplicates."
+  },
+  "loss_bank_passbook": {
+    "title": "Loss of Bank Passbook/Cheque Book",
+    "template": "I have lost my bank passbook and unused cheque book for account {acc_no} on {date}. Requesting a report to prevent misuse and get replacements."
+  },
+  "arms_license_verification": {
+    "title": "Verification for Arms License",
+    "template": "I have applied for an arms license (App No: {app_no}) and require the mandatory police verification. Requesting the local station to complete the inquiry."
+  },
+  "loudspeaker_permission": {
+    "title": "Permission for Loudspeakers",
+    "template": "I am requesting permission to use loudspeakers for {event_name} at {location} on {date} from {start_time} to {end_time}. We will adhere to decibel limits."
+  },
+  "religious_procession": {
+    "title": "Permission for Religious Procession",
+    "template": "Requesting permission for a religious procession of {route} on {date}. We expect a gathering of {number} people and will ensure no public disturbance."
+  },
+  "wedding_function_late": {
+    "title": "Permission for Late-Night Wedding Function",
+    "template": "Requesting permission for a wedding function at {location} on {date} extending until {time}. We will ensure sound limits are maintained after 10 PM."
+  },
+  "missing_pet": {
+    "title": "Complaint Against Missing Pet",
+    "template": "My pet {animal_type} (Name: {name}) has been missing from {location} since {date}. It was wearing a {color} collar. Requesting help in tracking/locating."
+  },
+  "subsidy_non_receipt": {
+    "title": "Non-receipt of Government Subsidies",
+    "template": "I am reporting the non-receipt of my {subsidy_type} subsidy into my linked account {acc_no} since {month}. Requesting verification of the disbursement."
+  },
+  "unidentified_dead_body": {
+    "title": "Reporting Unidentified Dead Body",
+    "template": "An unidentified dead body of an adult/child was spotted at {location} on {date} at {time}. Requesting immediate recovery and forensic examination."
+  },
+  "abandoned_vehicle": {
+    "title": "Reporting Abandoned Vehicle",
+    "template": "A vehicle {reg_no} has been abandoned and stationary at {location} for over {days} days. It appears suspicious. Requesting a check for theft status."
+  },
+  "official_rude_behavior": {
+    "title": "Complaint Against Behavior of Public Official",
+    "template": "I wish to file a formal complaint against the rude and uncooperative behavior of {official_name} at {department} on {date} during my visit for {purpose}."
+  },
+  "temple_donation_theft": {
+    "title": "Theft of Temple/Mosque Donations",
+    "template": "Theft of donation boxes/cash occurred at {religious_place} on the night of {date}. The estimated loss is ₹{amount}. Requesting investigation."
+  },
+  "cooperative_society_fraud": {
+    "title": "Fraud in Cooperative Society",
+    "template": "I am reporting financial irregularities and fraud by the management of {society_name} involving members' funds to the tune of ₹{amount}."
+  },
+  "wildlife_trade": {
+    "title": "Illegal Trade of Wildlife Products",
+    "template": "I wish to report the illegal sale of {animal_parts/product} at {location} on {date}. This is a violation of the Wildlife Protection Act."
+  },
+  "coaching_copyright_violation": {
+    "title": "Copyright Violation in Coaching Center",
+    "template": "The coaching center {center_name} is illegally using and distributing my proprietary study material without authorization. Requesting a raid."
+  },
+  "govt_symbol_misuse": {
+    "title": "Misuse of Government Symbols",
+    "template": "A private individual/vehicle {reg_no} is illegally using the Government of India/State logo and 'Government Vehicle' board at {location}."
+  },
+  "illegal_mining": {
+    "title": "Illegal Mining (Sand/Stone)",
+    "template": "Illegal sand/stone mining is being carried out at {location} on the banks of {river} during the night hours. Requesting immediate seizure of equipment."
+  },
+  "rti_misuse_harassment": {
+    "title": "Misuse of RTI (Harassment)",
+    "template": "I am reporting the targeted misuse of the RTI Act by {name} to harass me and my family by filing repetitive and frivolous applications. Requesting a review."
+  },
+  "matrimonial_fraud": {
+    "title": "Fraudulent Marriage/Matrimonial Scam",
+    "template": "I was defrauded of ₹{amount} by a person {name} I met on {site}. They fabricated a marriage proposal and fake emergency to take money. Requesting investigation."
+  },
+  "silence_zone_violation": {
+    "title": "Violation of Silence Zone (Hospital/School)",
+    "template": "Loud music and honking are occurring routinely within the silence zone of {hospital_school_name}. Requesting strict enforcement and fines."
+  },
+  "manhole_cover_theft": {
+    "title": "Theft of Manhole Covers",
+    "template": "Theft of public manhole covers has occurred at {location}, creating a dangerous death trap for commuters. Requesting investigation and replacement."
+  },
+  "unclaimed_suspicious_object": {
+    "title": "Reporting Unclaimed Suspicious Object",
+    "template": "An unclaimed bag/box has been found at {location} at {time}. It appears suspicious. Requesting a bomb disposal squad check."
+  },
+  "loan_shark_complaint": {
+    "title": "Complaint Against Private Moneylenders",
+    "template": "I am being harassed and threatened by private moneylenders {names} who are charging illegal interest rates and threatening physical harm. Requesting protection."
+  },
+  "ragging_complaint": {
+    "title": "Ragging in College/Hostel",
+    "template": "I am reporting an instance of severe ragging by senior students at {college_name} on {date}. I have been subjected to {details}. Requesting an anti-ragging inquiry."
+  },
+  "religious_loudspeaker_misuse": {
+    "title": "Misuse of Loudspeakers by Religious Places",
+    "template": "The religious place at {location} is using loudspeakers beyond the permitted hours and volume levels, causing a disturbance to the neighborhood. Requesting action."
   }
 }

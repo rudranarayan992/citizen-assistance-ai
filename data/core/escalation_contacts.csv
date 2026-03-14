@@ -1,5 +1,58 @@
-Superintendent of Police,Chennai Police,spchennai@tnpolice.gov.in,https://tnpolice.gov.in
-District Magistrate,Chennai District Collectorate,collectorchn@nic.in,https://chennai.nic.in
-Women Commission,National Commission for Women,ncw@nic.in,https://ncw.nic.in
-Cyber Crime Cell,Indian Cybercrime Portal,helpdesk@cybercrime.gov.in,https://cybercrime.gov.in
-Human Rights Commission,NHRC India,covdnhrc@nic.in,https://nhrc.nic.in
+law_name,section,title,description,punishment,bailable,cognizable,landmark_cases,official_url
+IPC / BNS,420 / 318,Cheating and Fraud,"Cheating and dishonestly inducing delivery of property.","Up to 7 years imprisonment",No,Yes,"Hridaya Ranjan Prasad Verma v. State of Bihar (2000); Indian Oil Corporation v. NEPC India Ltd. (2006)",https://www.indiacode.nic.in
+IPC / BNS,354 / 74,Assault on woman,"Assault or criminal force to a woman with intent to outrage her modesty.","Up to 5 years imprisonment",No,Yes,"Rupan Deol Bajaj v. K.P.S. Gill (1995); Tarkeshwar Sahu v. State of Bihar (2006)",https://www.indiacode.nic.in
+IPC / BNS,302 / 101,Murder,"Punishment for murder of a human being.","Death or Life Imprisonment",No,Yes,"Bachan Singh v. State of Punjab (1980) - Rarest of rare doctrine",https://www.indiacode.nic.in
+IPC / BNS,375 / 63,Rape,"Sexual intercourse against a woman's will or consent.","Life imprisonment or death",No,Yes,"Mathura Rape Case (1972); Nirbhaya Case (2012)",https://www.indiacode.nic.in
+IPC / BNS,498A / 85,Cruelty by Husband,"Husband or relative of husband subjecting a woman to cruelty (dowry).","Up to 3 years imprisonment",No,Yes,"Arnesh Kumar v. State of Bihar (2014) - Guidelines for arrest",https://www.indiacode.nic.in
+IPC / BNS,509 / 79,Insult to Modesty,"Word, gesture, or act intended to insult the modesty of a woman.","Up to 3 years imprisonment",Yes,No,"State of Punjab v. Major Singh (1966)",https://www.indiacode.nic.in
+IPC / BNS,124A / 152,Sedition / Acts against State,"Acts endangering sovereignty, unity, and integrity of India (Updated in BNS).","Life imprisonment or fine",No,Yes,"Kedar Nath Singh v. State of Bihar (1962); S.G. Vombatkere v. Union of India (2022)",https://www.indiacode.nic.in
+IT Act,66C,Identity Theft,"Fraudulent use of electronic signatures, passwords, or other unique identification.","Up to 3 years imprisonment or fine",Yes,Yes,"State of Tamil Nadu v. Suhas Katti (2004) - First conviction under IT Act",https://www.indiacode.nic.in
+IT Act,66D,Cheating using computer resources,"Cheating by personation using computer resources.","Up to 3 years imprisonment or fine",Yes,Yes,"Sony Sambandh Case (2013); Sandeep Vaghese v. State of Kerala",https://www.indiacode.nic.in
+CrPC / BNSS,154 / 173,FIR Registration,"Obligation of police to register Information in writing of a cognizable offence.","Legal duty on police to register FIR",N/A,N/A,"Lalita Kumari v. Govt. of U.P. (2013) - Mandatory FIR registration guidelines",https://www.indiacode.nic.in
+CrPC / BNSS,156(3) / 175,Magistrate Complaint,"Magistrate may order an investigation if police refuse to investigate.","Magistrate can order police to register & investigate",N/A,N/A,"Sakiri Vasu v. State of U.P. (2007) - Scope of Magistrate powers",https://www.indiacode.nic.in
+DV Act,NA,Protection Orders,"Civil remedies and protection orders for victims of domestic violence.","Civil reliefs and protection orders",N/A,N/A,"Satish Chander Ahuja v. Sneha Ahuja (2020); Lalita Toppo v. State of Jharkhand (2018)",https://www.indiacode.nic.in
+
+service,state,phone,website
+Emergency (All),National,112,https://112.gov.in
+Police Control,National,100,https://www.india.gov.in
+Fire Station,National,101,https://www.india.gov.in
+Ambulance,National,108 / 102,https://www.india.gov.in
+Women Helpline,National,1091 / 181,https://wcd.nic.in
+Child Helpline,National,1098,https://www.childlineindia.org
+Cyber Fraud,National,1930,[suspicious link removed]
+Senior Citizen,National,14567,https://socialjustice.gov.in
+Disaster Management,National,1070 / 1077,https://ndma.gov.in
+Railway Helpline,National,139,https://indianrailways.gov.in
+Kisan Call Centre,National,1551,https://www.google.com/search?q=https://agricoop.nic.in
+
+Emergency (All),Odisha,112,https://police.odisha.gov.in
+Police Control,Odisha,100,https://police.odisha.gov.in
+Women Helpline,Odisha,181 / 1091,https://cawach.odisha.gov.in
+Child Helpline,Odisha,1098,https://odisha.gov.in
+Cyber Fraud,Odisha,1930 / 7077798111,[suspicious link removed]
+Senior Citizen,Odisha,14567,https://police.odisha.gov.in
+Fire Station,Odisha,101,https://www.google.com/search?q=https://odishafireservices.gov.in
+Ambulance,Odisha,108 / 102,https://nhmodisha.gov.in
+Traffic Control,Odisha,1095,https://police.odisha.gov.in
+
+Emergency (All),Tamil Nadu,112,https://www.tn.gov.in
+Police Control,Tamil Nadu,100,https://www.google.com/search?q=https://eservices.tnpolice.gov.in
+Women Helpline,Tamil Nadu,181 / 1091,https://www.tn.gov.in
+Child Helpline,Tamil Nadu,1098,https://www.google.com/search?q=https://socialdefence.tn.gov.in
+Cyber Fraud,Tamil Nadu,1930,[suspicious link removed]
+Senior Citizen,Tamil Nadu,14567,https://www.tn.gov.in
+Fire and Rescue,Tamil Nadu,101,https://tnfrs.tn.gov.in
+Ambulance,Tamil Nadu,108 / 102,https://tnhealth.tn.gov.in
+Disaster Helpline,Tamil Nadu,1070 / 1077,https://tnsdma.tn.gov.in
+
+role,department,state,contact,website
+Superintendent of Police,Chennai Police,Tamil Nadu,spchennai@tnpolice.gov.in,https://www.tnpolice.gov.in
+Superintendent of Police (DGP),Odisha Police,Odisha,sphqrs.odpol@od.gov.in,https://police.odisha.gov.in
+District Collector,Chennai District Collectorate,Tamil Nadu,dispatch@chennai.nic.in,https://chennai.nic.in
+District Collector,Khordha (Bhubaneswar),Odisha,dm-khurda@od.gov.in,https://khordha.odisha.gov.in
+National Commission for Women,NCW,National,ncw@nic.in,https://ncw.nic.in
+National Human Rights Commission,NHRC,National,nhrc@nic.in,https://nhrc.nic.in
+Cyber Crime Cell,National Cyber Crime Portal,National,helpdesk@cybercrime.gov.in,[suspicious link removed]
+State Women Commission,Tamil Nadu State Commission for Women,Tamil Nadu,swc.tn@gov.in,https://www.tn.gov.in
+State Women Commission,Odisha State Commission for Women,Odisha,oscw.od@nic.in,https://www.google.com/search?q=https://oscw.nic.in
+State Human Rights Commission,Odisha Human Rights Commission,Odisha,ohrc@nic.in,https://ohrc.nic.in

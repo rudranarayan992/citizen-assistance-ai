@@ -1,5 +1,8 @@
-law_name,section,title,description,punishment
-IPC,420,Cheating and Fraud,Dishonest inducement to deliver property,Up to 7 years imprisonment
-IPC,354,Assault on Woman,Assault with intent to outrage modesty,Up to 5 years imprisonment
-IT Act,66C,Identity Theft,Use of electronic signature or password fraudulently,Up to 3 years
-CrPC,154,FIR Registration,Police must register FIR for cognizable offence,Legal obligation
+law_name,section,title,description,punishment,bailable,cognizable,landmark_cases,official_url
+IPC,420,Cheating and Fraud,"Cheating and dishonestly inducing delivery of property.","Up to 7 years imprisonment",No,Yes,"Hridaya Ranjan Prasad Verma v. State of Bihar (2000); Indian Oil Corporation v. NEPC India Ltd. (2006)",https://www.indiacode.nic.in
+IPC,354,Assault on woman,"Assault or criminal force to a woman with intent to outrage her modesty.","Up to 5 years imprisonment",No,Yes,"Rupan Deol Bajaj v. K.P.S. Gill (1995); Tarkeshwar Sahu v. State of Bihar (2006)",https://www.indiacode.nic.in
+IT Act,66C,Identity Theft,"Fraudulent use of electronic signatures, passwords, or other unique identification.","Up to 3 years imprisonment or fine",Yes,Yes,"State of Tamil Nadu v. Suhas Katti (2004) - First conviction under IT Act",https://www.indiacode.nic.in
+IT Act,66D,Cheating using computer resources,"Cheating by personation using computer resources.","Up to 3 years imprisonment or fine",Yes,Yes,"Sony Sambandh Case (2013); Sandeep Vaghese v. State of Kerala",https://www.indiacode.nic.in
+CrPC,154,FIR Registration,"Information in writing of a cognizable offence to police; obligation to register FIR.","Legal duty on police to register FIR",N/A,N/A,"Lalita Kumari v. Govt. of U.P. (2013) - Mandatory FIR registration guidelines",https://www.indiacode.nic.in
+CrPC,156(3),Magistrate Complaint,"Magistrate may order an investigation if police refuse to investigate.","Magistrate can order police to register & investigate",N/A,N/A,"Sakiri Vasu v. State of U.P. (2007) - Scope of Magistrate powers",https://www.indiacode.nic.in
+DV Act,NA,Protection Orders,"Civil remedies and protection orders for victims of domestic violence.","Civil reliefs and protection orders",N/A,N/A,"Satish Chander Ahuja v. Sneha Ahuja (2020); Lalita Toppo v. State of Jharkhand (2018)",https://www.indiacode.nic.in

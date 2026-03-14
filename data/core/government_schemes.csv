@@ -1,5 +1,8 @@
-scheme_name,min_age,max_age,income_limit,state,benefit
-PM Awas Yojana,18,60,600000,All India,Housing subsidy
-Ayushman Bharat,0,100,500000,All India,Health insurance
-Startup India,18,60,No limit,All India,Business support
-Widow Pension,18,60,200000,State specific,Monthly pension
+scheme_name,min_age,max_age,income_limit,category,state,benefit,official_url
+Pradhan Mantri Awas Yojana (PMAY),18,65,600000,Housing,All India,Housing subsidy,https://pmaymis.gov.in
+Ayushman Bharat Pradhan Mantri Jan Arogya Yojana,0,100,500000,Health,All India,Health insurance coverage,https://www.pmjay.gov.in
+PM-KISAN,18,75,,Agriculture,All India,₹6000/year per farmer,https://pmkisan.gov.in
+Deen Dayal Upadhyaya Antyodaya Yojana - NRLM,18,60,,Poverty Alleviation,All India,Self help group support,https://nrlm.gov.in
+National Social Assistance Programme (NSAP),18,100,200000,Social Security,All India,Old age/Disability pension,https://socialsecurity.gov.in
+Chief Minister/State Widow Pension,18,65,200000,Social Security,Tamil Nadu,Monthly pension,state portal
+PM Garib Kalyan Yojana,18,60,250000,FInancial Support,All India,Cash transfers/benefits,https://www.india.gov.in

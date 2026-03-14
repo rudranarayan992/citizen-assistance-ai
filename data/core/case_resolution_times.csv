@@ -1,5 +1,16 @@
-cyber_fraud,30,Depends on bank investigation
-domestic_violence,7,Protection orders usually within days
-sexual_harassment,20,Investigation required
-police_refusal,5,Escalation to SP often resolves quickly
-property_dispute,180,Civil cases take longer
+incident_type,average_resolution_days,notes
+cyber_fraud,30,"Typical bank + cybercrime portal investigations; depends on bank response and evidence."
+domestic_violence,7,"Immediate protection orders and short police actions; criminal case timelines longer."
+sexual_harassment,20,"Time to register FIR and initial investigation; full prosecution longer."
+police_refusal,14,"Time until escalation to SP or magistrate produces result; varies by district workload."
+missing_child,2,"Emergency priority; immediate wireless alerts and search operations."
+theft_snatching,45,"Investigation of CCTV, local informers, and recovery of assets."
+cheque_bounce,90,"Initial notice (30 days) + legal filing; court process varies by city."
+caste_discrimination,60,"Investigation under SC/ST Act requires DSP rank officer; involves social verification."
+hit_and_run,45,"CCTV tracking and forensic analysis of vehicle paint/impact."
+motor_accident_claim,365,"MACT cases take significant time for medical assessment and insurance processing."
+consumer_complaint,120,"Filing in District Forum; depends on opposition response and mediation efforts."
+environmental_nuisance,90,"NGT or Pollution Board inspections; involves scientific data and hearing."
+property_dispute,180,"Civil cases take many months; criminal trespass/forgery may be faster."
+financial_fraud_large,60,"High-value banking frauds require bank & police coordination and forensic audit."
+general_legal_advice,3,"Time to schedule human legal advisor review (if escalated)."

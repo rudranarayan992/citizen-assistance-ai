@@ -1,70 +1,272 @@
 {
-  "incidents": [
-    {
-      "id": "cyber_fraud",
-      "name": "Cyber Fraud",
-      "severity": "high",
-      "emergency": false,
-      "keywords": [
-        "upi fraud",
-        "online scam",
-        "money stolen",
-        "bank fraud",
-        "otp scam"
-      ],
-      "related_laws": [
-        "IPC 420",
-        "IT Act 66C",
-        "IT Act 66D"
-      ],
-      "recommended_action": "report_cybercrime_portal"
-    },
-    {
-      "id": "domestic_violence",
-      "name": "Domestic Violence",
-      "severity": "critical",
-      "emergency": true,
-      "keywords": [
-        "husband beating",
-        "family violence",
-        "domestic abuse"
-      ],
-      "related_laws": [
-        "IPC 498A",
-        "Protection of Women from Domestic Violence Act"
-      ],
-      "recommended_action": "contact_women_helpline"
-    },
-    {
-      "id": "sexual_harassment",
-      "name": "Sexual Harassment",
-      "severity": "high",
-      "emergency": true,
-      "keywords": [
-        "stalking",
-        "molestation",
-        "sexual harassment"
-      ],
-      "related_laws": [
-        "IPC 354",
-        "IPC 354A"
-      ],
-      "recommended_action": "file_police_complaint"
-    },
-    {
-      "id": "police_refusal",
-      "name": "Police Refused FIR",
-      "severity": "medium",
-      "emergency": false,
-      "keywords": [
-        "police refused fir",
-        "police not registering complaint"
-      ],
-      "related_laws": [
-        "CrPC 154",
-        "CrPC 156(3)"
-      ],
-      "recommended_action": "escalate_to_sp"
-    }
-  ]
+"safety_and_crime_reporting": {
+"cyber_crime_portal": "[suspicious link removed]",
+"national_missing_person_search": "https://trackthemissingchild.gov.in",
+"lost_and_found_mobile_blocking": "https://ceir.sancharsaathi.gov.in",
+"emergency_response_system_unified": "https://112.gov.in",
+"anti_human_trafficking_portal": "https://www.google.com/search?q=https://ahtp.mha.gov.in",
+"crime_and_criminal_tracking_network": "https://ncrb.gov.in"
+},
+"grievance_and_rights": {
+"centralized_public_grievance_cpgrams": "https://pgportal.gov.in",
+"national_consumer_helpline": "https://consumerhelpline.gov.in",
+"rti_online_filing": "https://rtionline.gov.in",
+"nhrc_complaint_human_rights": "https://www.google.com/search?q=https://hrcnet.nic.in",
+"national_commission_for_women": "http://ncw.nic.in",
+"national_commission_for_protection_of_child_rights": "https://ncpcr.gov.in",
+"sc_st_commission_complaints": "https://ncsc.nic.in"
+},
+"legal_and_legislative": {
+"india_code_central_state_acts": "https://www.indiacode.nic.in",
+"e_courts_services": "https://ecourts.gov.in",
+"supremecourt_of_india": "https://www.google.com/search?q=https://main.sci.gov.in",
+"legal_information_institute_of_india": "https://www.google.com/search?q=http://www.liindia.org",
+"national_legal_services_authority_nalsa": "https://nalsa.gov.in",
+"bar_council_of_india": "http://www.barcouncilofindia.org"
+},
+"financial_and_banking": {
+"rbi_ombudsman_complaints": "https://cms.rbi.org.in",
+"sebi_scores_investor_grievance": "https://www.google.com/search?q=https://scores.gov.in",
+"pension_fund_regulatory_pfrda": "https://www.pfrda.org.in",
+"insurance_regulatory_irda": "https://irdai.gov.in",
+"income_tax_efiling": "https://www.incometax.gov.in",
+"gst_portal": "https://www.google.com/search?q=https://www.gst.gov.in",
+"investor_education_and_protection_fund": "https://www.google.com/search?q=https://www.iepf.gov.in",
+"insolvency_and_bankruptcy_board": "https://www.ibbi.gov.in"
+},
+"incident_legal_mapping": [
+{
+"id": "abandonment_of_child",
+"name": "Abandonment of Child / Child Desertion",
+"severity": "high",
+"emergency": true,
+"keywords": ["left child", "abandoned baby", "deserted minor"],
+"related_laws": ["IPC 317 / BNS 93", "Juvenile Justice Act"],
+"recommended_action": "Call 1098 (Childline) and 112 immediately."
+},
+{
+"id": "acid_attack",
+"name": "Acid Attack",
+"severity": "critical",
+"emergency": true,
+"keywords": ["acid throw", "chemical attack", "vitriolage"],
+"related_laws": ["IPC 326A / BNS 124", "IPC 326B / BNS 124(2)"],
+"recommended_action": "Emergency medical aid and immediate FIR. Free treatment is mandatory."
+},
+{
+"id": "adulteration_food",
+"name": "Adulteration of Food or Drink",
+"severity": "medium",
+"emergency": false,
+"keywords": ["poisonous food", "fake milk", "adulterated spices"],
+"related_laws": ["IPC 272 / BNS 274", "FSSAI Act"],
+"recommended_action": "Report to Food Safety Officer or FSSAI portal."
+},
+{
+"id": "animal_cruelty",
+"name": "Animal Cruelty",
+"severity": "medium",
+"emergency": false,
+"keywords": ["beating dog", "killing street animals", "animal abuse"],
+"related_laws": ["IPC 428/429 / BNS 325", "Prevention of Cruelty to Animals Act"],
+"recommended_action": "Inform local SPCA or Police Station."
+},
+{
+"id": "bribery_corruption",
+"name": "Bribery & Corruption",
+"severity": "high",
+"emergency": false,
+"keywords": ["bribe", "government official money", "corruption"],
+"related_laws": ["Prevention of Corruption Act", "IPC 171E / BNS 170"],
+"recommended_action": "Contact State Vigilance or Anti-Corruption Bureau (ACB)."
+},
+{
+"id": "cheating_property",
+"name": "Cheating & Dishonest Inducement",
+"severity": "high",
+"emergency": false,
+"keywords": ["420 case", "fraud", "property scam"],
+"related_laws": ["IPC 420 / BNS 318"],
+"recommended_action": "File FIR and seek legal counsel for recovery suit."
+},
+{
+"id": "child_marriage",
+"name": "Child Marriage",
+"severity": "high",
+"emergency": true,
+"keywords": ["minor marriage", "underage wedding"],
+"related_laws": ["Prohibition of Child Marriage Act, 2006"],
+"recommended_action": "Contact Childline 1098 or District Magistrate."
+},
+{
+"id": "cyber_fraud",
+"name": "Cyber Fraud & UPI Scams",
+"severity": "high",
+"emergency": false,
+"keywords": ["phishing", "upi fraud", "otp scam"],
+"related_laws": ["IT Act 66D", "BNS 318"],
+"recommended_action": "Call 1930 and report on cybercrime.gov.in within the 'Golden Hour'."
+},
+{
+"id": "defamation",
+"name": "Defamation",
+"severity": "low",
+"emergency": false,
+"keywords": ["insult", "false statement", "libel", "slander"],
+"related_laws": ["IPC 499/500 / BNS 356"],
+"recommended_action": "File a private criminal complaint in court."
+},
+{
+"id": "domestic_violence",
+"name": "Domestic Violence",
+"severity": "critical",
+"emergency": true,
+"keywords": ["beating wife", "abuse by husband", "family torture"],
+"related_laws": ["IPC 498A / BNS 85", "DV Act 2005"],
+"recommended_action": "Call 1091 or 112. Seek protection order from Magistrate."
+},
+{
+"id": "dowry_death",
+"name": "Dowry Death",
+"severity": "critical",
+"emergency": true,
+"keywords": ["killed for dowry", "dahej death"],
+"related_laws": ["IPC 304B / BNS 80"],
+"recommended_action": "Immediate Police Intervention. Mandatory Executive Magistrate inquest."
+},
+{
+"id": "drunk_driving",
+"name": "Drunk Driving",
+"severity": "high",
+"emergency": true,
+"keywords": ["drink and drive", "breathalyzer", "alcohol"],
+"related_laws": ["Motor Vehicles Act Section 185"],
+"recommended_action": "Police can arrest without warrant if BAC > 30mg/100ml."
+},
+{
+"id": "environmental_pollution",
+"name": "Environmental Pollution",
+"severity": "medium",
+"emergency": false,
+"keywords": ["industrial waste", "water pollution", "smoke"],
+"related_laws": ["Environment Protection Act", "Water/Air Acts"],
+"recommended_action": "Complaint to State Pollution Control Board (SPCB)."
+},
+{
+"id": "illegal_arrest",
+"name": "Illegal Arrest / Detention",
+"severity": "high",
+"emergency": false,
+"keywords": ["police custody", "wrongful arrest", "no warrant"],
+"related_laws": ["Article 22 Constitution", "BNSS 173/187"],
+"recommended_action": "Apply for Habeas Corpus in High Court."
+},
+{
+"id": "kidnapping",
+"name": "Kidnapping & Abduction",
+"severity": "critical",
+"emergency": true,
+"keywords": ["kidnapped", "abducted", "missing child"],
+"related_laws": ["IPC 363 / BNS 137"],
+"recommended_action": "Dial 112. Police must register FIR immediately (Zero FIR)."
+},
+{
+"id": "medical_negligence",
+"name": "Medical Negligence",
+"severity": "high",
+"emergency": false,
+"keywords": ["wrong surgery", "doctor mistake", "hospital negligence"],
+"related_laws": ["IPC 304A / BNS 106", "Consumer Protection Act"],
+"recommended_action": "Complaint to State Medical Council and Consumer Forum."
+},
+{
+"id": "noise_pollution",
+"name": "Noise Pollution",
+"severity": "low",
+"emergency": false,
+"keywords": ["loudspeaker", "night music", "honking"],
+"related_laws": ["Noise Pollution Rules 2000"],
+"recommended_action": "Call 112 or local Police Station. Prohibited 10 PM to 6 AM."
+},
+{
+"id": "outraging_modesty",
+"name": "Outraging Modesty / Molestation",
+"severity": "high",
+"emergency": true,
+"keywords": ["molested", "bad touch", "harassment"],
+"related_laws": ["IPC 354 / BNS 74"],
+"recommended_action": "File FIR. Statement must be recorded by a woman police officer."
+},
+{
+"id": "police_refusal_fir",
+"name": "Police Refusal to Register FIR",
+"severity": "high",
+"emergency": false,
+"keywords": ["police not writing complaint", "no fir"],
+"related_laws": ["CrPC 154 / BNSS 173"],
+"recommended_action": "Send complaint to SP via post or approach Magistrate under 156(3) / 175."
+},
+{
+"id": "posh_workplace",
+"name": "Sexual Harassment at Workplace",
+"severity": "high",
+"emergency": false,
+"keywords": ["office harassment", "boss abuse", "posh"],
+"related_laws": ["POSH Act, 2013"],
+"recommended_action": "Complain to Internal Complaints Committee (ICC) of the company."
+},
+{
+"id": "rape",
+"name": "Sexual Assault / Rape",
+"severity": "critical",
+"emergency": true,
+"keywords": ["rape", "sexual assault", "forced sex"],
+"related_laws": ["IPC 376 / BNS 64"],
+"recommended_action": "Immediate medical exam (Do not wash/change). File FIR. 112/181."
+},
+{
+"id": "sc_st_atrocity",
+"name": "Caste Based Discrimination / Atrocity",
+"severity": "high",
+"emergency": true,
+"keywords": ["caste abuse", "dalit atrocity", "untouchability"],
+"related_laws": ["SC/ST (Prevention of Atrocities) Act"],
+"recommended_action": "Immediate FIR under specialized act. Mandatory compensation."
+},
+{
+"id": "senior_citizen_neglect",
+"name": "Neglect of Senior Citizens",
+"severity": "medium",
+"emergency": false,
+"keywords": ["parent abuse", "old age neglect", "property grab"],
+"related_laws": ["Maintenance and Welfare of Parents Act, 2007"],
+"recommended_action": "Approach Maintenance Tribunal (SDM Office)."
+},
+{
+"id": "stalking",
+"name": "Stalking",
+"severity": "high",
+"emergency": true,
+"keywords": ["following me", "cyber stalking", "creepy following"],
+"related_laws": ["IPC 354D / BNS 78"],
+"recommended_action": "Report to Police. First offense is bailable, second is non-bailable."
+},
+{
+"id": "theft_larceny",
+"name": "Theft",
+"severity": "medium",
+"emergency": true,
+"keywords": ["stolen bag", "pickpocket", "missing phone"],
+"related_laws": ["IPC 379 / BNS 303"],
+"recommended_action": "Dial 112. For mobiles, report on Sanchar Saathi portal."
+}
+],
+"healthcare_and_emergency": {
+"ayushman_bharat_digital_mission": "https://abdm.gov.in",
+"cowin_vaccination_records": "https://www.google.com/search?q=https://www.cowin.gov.in",
+"national_health_portal": "https://www.google.com/search?q=https://www.nhp.gov.in",
+"blood_bank_availability": "https://www.google.com/search?q=https://www.eraktkosh.in",
+"e_sanjeevani_telemedicine": "https://esanjeevani.in",
+"national_ambulance_service": "102 / 108"
+}
 }

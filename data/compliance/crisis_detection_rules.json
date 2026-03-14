@@ -1,15 +1,95 @@
 {
-  "emergency_keywords": [
-    "attack",
-    "bleeding",
-    "in danger",
-    "kidnapped",
-    "help me",
-    "violence now"
-  ],
-  "immediate_action": [
-    "Call emergency number 112",
-    "Contact nearest police station",
-    "Seek immediate medical help"
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2024-05-22",
+    "description": "Rule-based engine for identifying emergency scenarios and triggering localized immediate actions."
+  },
+  "detection_categories": {
+    "life_threatening_physical": {
+      "severity": "Critical",
+      "keywords": [
+        "attack", "assault", "stabbed", "shot", "gun", "knife", "killing", "murder", 
+        "kidnapped", "hostage", "choking", "strangled", "drowning", "violence now",
+        "in danger", "help me", "save me", "running away", "followed"
+      ],
+      "immediate_actions": [
+        "Call 112 (Integrated Emergency Response)",
+        "Share Live Location with 3 trusted contacts",
+        "Seek a safe/lockable hiding spot",
+        "Tamil Nadu: Use Kaval Uthavi 'Shake Trigger' feature",
+        "Odisha: Contact nearest PCR Van via 112"
+      ]
+    },
+    "medical_emergency": {
+      "severity": "Critical",
+      "keywords": [
+        "bleeding", "unconscious", "not breathing", "heart attack", "stroke", 
+        "seizure", "poison", "snake bite", "electric shock", "labor pain", 
+        "accident", "broken bone", "allergic reaction", "burns"
+      ],
+      "immediate_actions": [
+        "Dial 108 for Emergency Ambulance",
+        "Apply direct pressure to bleeding wounds",
+        "Check airway and pulse",
+        "Tamil Nadu: Call 104 for 24/7 Medical Advice",
+        "Odisha: Call 102 (Janani Express) for maternal emergencies"
+      ]
+    },
+    "sexual_offenses": {
+      "severity": "Critical",
+      "keywords": [
+        "rape", "molested", "sexual assault", "harassment", "eve teasing", 
+        "stalking", "forced", "touching inappropriately", "naked", "voyeurism"
+      ],
+      "immediate_actions": [
+        "Call Women Helpline 181 or 1091",
+        "Get to a public area with witnesses",
+        "Do not wash or change clothes (preserve evidence)",
+        "Request medical examination and 164 statement recording"
+      ]
+    },
+    "cyber_and_financial": {
+      "severity": "High",
+      "keywords": [
+        "hacked", "bank fraud", "scam", "phishing", "sextortion", "blackmail", 
+        "money stolen", "otp shared", "account locked", "cyber bullying"
+      ],
+      "immediate_actions": [
+        "Call 1930 Cyber Crime Helpline immediately",
+        "Block all bank accounts and credit cards",
+        "Report incident on cybercrime.gov.in within the Golden Hour",
+        "Take screenshots of all chats and transaction IDs"
+      ]
+    },
+    "public_safety_fire": {
+      "severity": "High",
+      "keywords": [
+        "fire", "smoke", "explosion", "gas leak", "building collapse", "short circuit",
+        "riot", "bomb threat", "arson", "looting"
+      ],
+      "immediate_actions": [
+        "Call 101 for Fire and Rescue",
+        "Evacuate via stairs (Do not use elevators)",
+        "Odisha: Alert OSDMA for disaster-level incidents",
+        "Tamil Nadu: Alert TNSDMA via 1070"
+      ]
+    }
+  },
+  "state_logic_overrides": {
+    "Odisha": {
+      "primary_numbers": ["112", "181", "108"],
+      "preferred_agencies": ["Odisha Police", "OSDMA"],
+      "specific_advice": "In coastal areas during cyclone alerts, move to the nearest Multipurpose Cyclone Shelter."
+    },
+    "Tamil_Nadu": {
+      "primary_numbers": ["112", "100", "108", "104"],
+      "preferred_agencies": ["TN Police", "TNSDMA"],
+      "specific_advice": "Use the Kaval Uthavi App for 1-tap SOS connection to the TN Control Room."
+    }
+  },
+  "escalation_protocol": [
+    "If 112 is unreachable, dial 100 directly.",
+    "If police refuse to file FIR, escalate to SP/Commissioner via official email.",
+    "If medical help is delayed, contact the District Medical Officer."
   ]
 }

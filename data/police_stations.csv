@@ -1,5 +1,94 @@
-T Nagar Police Station,Chennai,Tamil Nadu,+91-44-24312345,T Nagar Chennai,13.0418,80.2337
-Adyar Police Station,Chennai,Tamil Nadu,+91-44-24456789,Adyar Chennai,13.0067,80.2570
-Velachery Police Station,Chennai,Tamil Nadu,+91-44-22434567,Velachery Chennai,12.9756,80.2212
-Tambaram Police Station,Chennai,Tamil Nadu,+91-44-22381234,Tambaram Chennai,12.9249,80.1000
-Anna Nagar Police Station,Chennai,Tamil Nadu,+91-44-26212345,Anna Nagar Chennai,13.0878,80.2160
+State,Category,District/City,Office/Designation,Contact Number
+Odisha,Headquarters,State Hdqrs (Cuttack),DGP Odisha (IPS),94389-16666
+Odisha,Headquarters,State Hdqrs (Cuttack),ADG Law & Order (IPS),0671-2304719
+Odisha,Headquarters,State Hdqrs (Cuttack),State Control Room (Emergency),112 / 0671-2304001
+Odisha,Commissionerate,Bhubaneswar UPD,Commissioner of Police (IPS),82803-38300
+Odisha,Commissionerate,Bhubaneswar UPD,DCP Bhubaneswar (IPS),82803-38302
+Odisha,Commissionerate,Bhubaneswar UPD,Addl. DCP (Public Grievance),82803-38301
+Odisha,Commissionerate,Bhubaneswar UPD,ACP Zone-1 (Complaint Cell),82803-38305
+Odisha,Commissionerate,Bhubaneswar UPD,Cyber Crime PS (Reporting),0674-2580000
+Odisha,Commissionerate,Bhubaneswar UPD,Mahila Police Station (IIC),82803-38309
+Odisha,Commissionerate,Bhubaneswar UPD,Police Control Room (BBSR),100 / 0674-2530048
+Odisha,Commissionerate,Cuttack UPD,DCP Cuttack (IPS),82803-38303
+Odisha,Commissionerate,Cuttack UPD,Addl. DCP Cuttack,82803-38304
+Odisha,Commissionerate,Cuttack UPD,ACPs (Grievance Cell),82803-38330
+Odisha,Commissionerate,Cuttack UPD,Police Control Room (Cuttack),0671-2306350
+Odisha,District,Puri,SP Puri (IPS),94389-16320
+Odisha,District,Puri,SDPO Puri (DSP Level),94389-16322
+Odisha,District,Puri,Puri District Control Room,06752-225400
+Odisha,District,Ganjam,SP Ganjam (IPS),94389-16964
+Odisha,District,Ganjam,SDPO Chhatrapur (DSP),94389-16966
+Odisha,District,Ganjam,Ganjam Control Room,06811-263300
+Odisha,District,Berhampur,SP Berhampur (IPS),94389-16670
+Odisha,District,Berhampur,SDPO City (DSP),94389-16675
+Odisha,District,Berhampur,Berhampur Control Room,0680-2220555
+Odisha,District,Sambalpur,SP Sambalpur (IPS),94389-16550
+Odisha,District,Sambalpur,SDPO Sadar (DSP),94389-16557
+Odisha,District,Sambalpur,Sambalpur Control Room,0663-2400222
+Odisha,District,Balasore,SP Balasore (IPS),94389-16340
+Odisha,District,Balasore,SDPO Balasore (DSP),94389-16341
+Odisha,District,Balasore,Balasore Control Room,06782-262001
+Odisha,District,Bhadrak,SP Bhadrak (IPS),94389-16370
+Odisha,District,Bhadrak,SDPO Bhadrak,94389-16374
+Odisha,District,Jajpur,SP Jajpur (IPS),94389-16456
+Odisha,District,Jajpur,SDPO Jajpur,94389-16460
+Odisha,District,Angul,SP Angul (IPS),94389-16430
+Odisha,District,Angul,SDPO Talcher (DSP),94389-16434
+Odisha,District,Angul,Angul Control Room,06764-230232
+Odisha,District,Keonjhar,SP Keonjhar (IPS),94389-16590
+Odisha,District,Keonjhar,SDPO Barbil,94389-16598
+Odisha,District,Jharsuguda,SP Jharsuguda (IPS),94389-16742
+Odisha,District,Jagatsinghpur,SP Jagatsinghpur (IPS),94389-16300
+Odisha,District,Khurda Rural,SP Khurda Rural (IPS),94389-16260
+Odisha,District,Khurda Rural,SDPO Balugaon,94389-16266
+Odisha,Special Unit,Statewide,Crime Branch Grievance,0671-2304659
+Odisha,Special Unit,Statewide,EOW Odisha (Complaints),0674-2390234
+Odisha,Special Unit,Statewide,Cyber Security Helpdesk,1930
+Tamil Nadu,Headquarters,Chennai,DGP Tamil Nadu (IPS),94981-00000
+Tamil Nadu,Headquarters,Chennai,ADG Law & Order (IPS),044-28447600
+Tamil Nadu,Headquarters,Chennai,State Control Room (SCR),100 / 112
+Tamil Nadu,Commissionerate,Greater Chennai,Commissioner of Police (IPS),94981-09810
+Tamil Nadu,Commissionerate,Greater Chennai,DC Public Grievances,94981-04200
+Tamil Nadu,Commissionerate,Greater Chennai,Joint Commissioner (North),94981-04300
+Tamil Nadu,Commissionerate,Greater Chennai,Joint Commissioner (South),94981-04400
+Tamil Nadu,Commissionerate,Greater Chennai,City Control Room (24/7),044-23452345
+Tamil Nadu,Commissionerate,Greater Chennai,Cyber Crime Cell (Complaints),044-23452350
+Tamil Nadu,Commissionerate,Greater Chennai,W-17 All Women PS (Adyar),044-23452587
+Tamil Nadu,Commissionerate,Coimbatore City,Commissioner of Police (IPS),0422-2300250
+Tamil Nadu,Commissionerate,Coimbatore City,DCP Law & Order (Grievance),0422-2300588
+Tamil Nadu,Commissionerate,Coimbatore City,Coimbatore Control Room,0422-2300900
+Tamil Nadu,Commissionerate,Madurai City,Commissioner of Police (IPS),0452-2336665
+Tamil Nadu,Commissionerate,Madurai City,DCP Headquarters (DSP/IPS),0452-2338100
+Tamil Nadu,Commissionerate,Madurai City,Madurai Control Room,0452-2338100
+Tamil Nadu,Commissionerate,Trichy City,Commissioner of Police (IPS),0431-2332566
+Tamil Nadu,Commissionerate,Trichy City,Trichy Control Room,0431-2410366
+Tamil Nadu,Commissionerate,Tiruppur City,Commissioner of Police (IPS),0421-2970017
+Tamil Nadu,District,Kancheepuram,SP Kancheepuram (IPS),94442-12749
+Tamil Nadu,District,Kancheepuram,DSP Headquarters,94450-80500
+Tamil Nadu,District,Kancheepuram,District Control Room,044-27238001
+Tamil Nadu,District,Vellore,SP Vellore (IPS),80566-54380
+Tamil Nadu,District,Vellore,DSP Vellore Sub-Div,0416-2226341
+Tamil Nadu,District,Vellore,Vellore Control Room,0416-2220468
+Tamil Nadu,District,Tirunelveli,SP Tirunelveli (IPS),94981-01600
+Tamil Nadu,District,Tirunelveli,DSP Tirunelveli (Sadar),0462-2501033
+Tamil Nadu,District,Tirunelveli,Tirunelveli Control Room,0462-2501068
+Tamil Nadu,District,Salem Rural,SP Salem Rural (IPS),88515-41380
+Tamil Nadu,District,Salem Rural,Salem Rural Control Room,0427-2415400
+Tamil Nadu,District,Erode,SP Erode (IPS),94981-49123
+Tamil Nadu,District,Erode,Erode Control Room,0424-2210100
+Tamil Nadu,District,Thoothukudi,SP Thoothukudi (IPS),94981-01400
+Tamil Nadu,District,Thoothukudi,DSP Thoothukudi Town,0461-2320499
+Tamil Nadu,District,Thanjavur,SP Thanjavur (IPS),94981-01100
+Tamil Nadu,District,Cuddalore,SP Cuddalore (IPS),94981-00430
+Tamil Nadu,District,Dharmapuri,SP Dharmapuri (IPS),94981-11700
+Tamil Nadu,District,Theni,SP Theni (IPS),94981-01700
+Tamil Nadu,District,Karur,SP Karur (IPS),94981-81220
+Tamil Nadu,District,Namakkal,SP Namakkal (IPS),94981-81210
+Tamil Nadu,District,Nilgiris,SP Nilgiris (IPS),0423-2223839
+Tamil Nadu,District,Dindigul,SP Dindigul (IPS),94981-01200
+Tamil Nadu,District,Virudhunagar,SP Virudhunagar (IPS),94981-01500
+Tamil Nadu,Special Unit,Statewide,ADG CB-CID (Complaints),044-28511580
+Tamil Nadu,Special Unit,Statewide,EOW Tamil Nadu (IPS),044-22500200
+Tamil Nadu,Special Unit,Statewide,Coastal Security Group,1093
+Tamil Nadu,Special Unit,Statewide,All Women Police Helpline,1091
+Tamil Nadu,Special Unit,Statewide,Traffic Helpline,103

@@ -1,6 +1,98 @@
 {
-  "cybercrime_reporting": "https://cybercrime.gov.in",
-  "government_schemes": "https://www.myscheme.gov.in",
-  "legal_database": "https://www.indiacode.nic.in",
-  "banking_guidelines": "https://www.rbi.org.in"
+"safety_and_crime_reporting": {
+"cyber_crime_portal": "[suspicious link removed]",
+"national_missing_person_search": "https://trackthemissingchild.gov.in",
+"lost_and_found_mobile_blocking": "https://ceir.sancharsaathi.gov.in",
+"emergency_response_system_unified": "https://112.gov.in",
+"anti_human_trafficking_portal": "https://www.google.com/search?q=https://ahtp.mha.gov.in"
+},
+"grievance_and_rights": {
+"centralized_public_grievance_cpgrams": "https://pgportal.gov.in",
+"national_consumer_helpline": "https://consumerhelpline.gov.in",
+"rti_online_filing": "https://rtionline.gov.in",
+"nhrc_complaint_human_rights": "https://www.google.com/search?q=https://hrcnet.nic.in",
+"national_commission_for_women": "http://ncw.nic.in",
+"national_commission_for_protection_of_child_rights": "https://ncpcr.gov.in"
+},
+"legal_and_legislative": {
+"india_code_central_state_acts": "https://www.indiacode.nic.in",
+"e_courts_services": "https://ecourts.gov.in",
+"supremecourt_of_india": "https://www.google.com/search?q=https://main.sci.gov.in",
+"legal_information_institute_of_india": "https://www.google.com/search?q=http://www.liindia.org",
+"legislative_department_drafts": "https://legislative.gov.in",
+"national_legal_services_authority_nalsa": "https://nalsa.gov.in"
+},
+"financial_and_banking": {
+"rbi_ombudsman_complaints": "https://cms.rbi.org.in",
+"sebi_scores_investor_grievance": "https://www.google.com/search?q=https://scores.gov.in",
+"pension_fund_regulatory_pfrda": "https://www.pfrda.org.in",
+"insurance_regulatory_irda": "https://irdai.gov.in",
+"income_tax_efiling": "https://www.incometax.gov.in",
+"gst_portal": "https://www.google.com/search?q=https://www.gst.gov.in",
+"investor_education_and_protection_fund": "https://www.google.com/search?q=https://www.iepf.gov.in"
+},
+"citizen_benefits_and_identity": {
+"my_scheme_portal": "https://www.myscheme.gov.in",
+"digital_locker_digilocker": "https://www.digilocker.gov.in",
+"uidai_aadhaar_services": "https://uidai.gov.in",
+"national_scholarship_portal": "https://scholarships.gov.in",
+"umang_all_in_one_app": "https://web.umang.gov.in",
+"pan_card_services_nsdl": "https://www.google.com/search?q=https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html",
+"voter_services_portal_nvsp": "https://www.nvsp.in"
+},
+"education_and_learning": {
+"swayam_online_courses": "https://swayam.gov.in",
+"nptel_engineering_courses": "https://nptel.ac.in",
+"national_digital_library": "https://www.google.com/search?q=https://ndl.iitkgp.ac.in",
+"diksha_digital_infrastructure_for_teachers": "https://www.google.com/search?q=https://diksha.gov.in",
+"samagra_shiksha_portal": "https://samagra.education.gov.in"
+},
+"agriculture_and_farmers": {
+"pm_kisan_samman_nidhi": "https://pmkisan.gov.in",
+"e_nam_national_agriculture_market": "https://enam.gov.in",
+"soil_health_card_portal": "https://soilhealth.dac.gov.in",
+"agmarknet_price_information": "https://agmarknet.gov.in",
+"pm_fasal_bima_yojana_crop_insurance": "https://pmfby.gov.in"
+},
+"travel_and_transport": {
+"sarathi_driving_license_services": "https://www.google.com/search?q=https://sarathi.parivahan.gov.in",
+"vahan_vehicle_registration_services": "https://vahan.parivahan.gov.in",
+"indian_railways_irctc": "https://www.irctc.co.in",
+"passport_seva_portal": "https://www.passportindia.gov.in",
+"air_sewa_aviation_grievance": "https://airsewa.gov.in"
+},
+"labor_and_employment": {
+"e_shram_portal_unorganized_workers": "https://eshram.gov.in",
+"national_career_service_ncs": "https://www.ncs.gov.in",
+"epfo_provident_fund_services": "https://www.epfindia.gov.in",
+"esic_employees_state_insurance": "https://www.esic.nic.in",
+"shram_suvidha_portal": "https://shramsuvidha.gov.in"
+},
+"business_and_corporate": {
+"mca21_company_filings": "https://www.google.com/search?q=https://www.mca.gov.in",
+"startup_india": "https://www.startupindia.gov.in",
+"udyam_msme_registration": "https://www.google.com/search?q=https://udyamregistration.gov.in",
+"gem_government_e_marketplace": "https://gem.gov.in",
+"intellectual_property_india_patents_trademarks": "https://ipindia.gov.in"
+},
+"land_and_real_estate": {
+"rera_compliance_search": "https://www.google.com/search?q=https://rera.india.gov.in",
+"digital_india_land_records": "https://dilrmp.gov.in",
+"e_registration_property": "https://registration.ind.in",
+"pm_awas_yojana_housing_for_all": "https://pmaymis.gov.in"
+},
+"healthcare_and_emergency": {
+"ayushman_bharat_digital_mission": "https://abdm.gov.in",
+"cowin_vaccination_records": "https://www.google.com/search?q=https://www.cowin.gov.in",
+"national_health_portal": "https://www.google.com/search?q=https://www.nhp.gov.in",
+"blood_bank_availability": "https://www.google.com/search?q=https://www.eraktkosh.in",
+"e_sanjeevani_telemedicine": "https://esanjeevani.in"
+},
+"utility_and_public_services": {
+"saubhagya_electricity_portal": "https://saubhagya.gov.in",
+"jal_jeevan_mission_water": "https://jaljeevanmission.gov.in",
+"pm_ujjwala_yojana_lpg": "https://www.pmuy.gov.in",
+"swachh_bharat_mission_urban": "https://sbmurban.org",
+"postal_services_india_post": "https://www.indiapost.gov.in"
+}
 }

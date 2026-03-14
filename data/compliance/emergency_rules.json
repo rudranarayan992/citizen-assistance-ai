@@ -1,42 +1,164 @@
 {
-  "emergency_keywords": [
-    "attack",
-    "bleeding",
-    "help me",
-    "in danger",
-    "kidnapped",
-    "rape",
-    "violence",
-    "threat",
-    "suicide"
-  ],
-
-  "emergency_response": {
-    "priority": "high",
-    "show_contacts": true,
-    "skip_normal_ai_response": true
+  "emergency_config": {
+    "system_version": "4.0.0",
+    "region_coverage": [
+      "National",
+      "Odisha",
+      "Tamil Nadu",
+      "Delhi",
+      "Maharashtra",
+      "Karnataka",
+      "West Bengal",
+      "Gujarat",
+      "Kerala",
+      "Andhra Pradesh",
+      "Telangana",
+      "Uttar Pradesh"
+    ],
+    "response_mode": "CRITICAL_VICTIM_SUPPORT_V4",
+    "default_disclaimer": "This information is for educational purposes only and does not replace professional legal advice."
   },
-
-  "emergency_contacts": [
-    {
-      "service": "National Emergency",
-      "phone": "112"
-    },
-    {
-      "service": "Police",
-      "phone": "100"
-    },
-    {
-      "service": "Women Helpline",
-      "phone": "1091"
-    },
-    {
-      "service": "Child Helpline",
-      "phone": "1098"
-    },
-    {
-      "service": "Cyber Fraud Helpline",
-      "phone": "1930"
+  "system_disclaimers": {
+    "legal_advice": "This response provides general legal information. Please consult a qualified lawyer for legal advice.",
+    "government_schemes": "Scheme eligibility results are based on available data and may vary depending on official government verification.",
+    "cyber_fraud": "Immediately report financial fraud to your bank and the cybercrime helpline (1930). This platform only provides guidance.",
+    "domestic_violence": "If you are in immediate danger, please contact emergency services or a local helpline immediately.",
+    "police_refusal": "This information explains legal rights under Indian law but does not guarantee legal outcomes."
+  },
+  "emergency_keywords": [
+    "attack", "bleeding", "help me", "in danger", "kidnapped", "rape", "violence", "threat", "suicide",
+    "murder", "killing", "stabbed", "shot", "shooting", "abuse", "domestic violence", "molested",
+    "stalked", "harassment", "trapped", "hostage", "drowning", "fire", "explosion", "accident",
+    "unconscious", "stroke", "heart attack", "poison", "snake bite", "electrocution", "choking",
+    "emergency", "police", "ambulance", "save me", "dying", "hurting", "assault", "forced",
+    "blackmail", "sextortion", "acid attack", "honor killing", "trafficking", "child abuse",
+    "elderly abuse", "robbery", "burglary", "riot", "terrorist", "bomb", "gas leak",
+    "allergic reaction", "seizure", "panic attack", "diabetic shock", "overdose", "broken bone",
+    "animal attack", "dog bite", "earthquake", "flood", "building collapse", "missing child",
+    "domestic helper abuse", "cyber bullying", "identity theft", "bank fraud", "eviction",
+    "wrongful arrest", "illegal detention", "labor abuse", "human shield", "organ trade",
+    "arson", "looting", "communal violence", "custodial torture", "forced marriage", "child marriage"
+  ],
+  "emergency_response_protocol": {
+    "priority": "CRITICAL",
+    "actions": [
+      "skip_normal_ai_conversation",
+      "enable_high_visibility_contacts",
+      "display_sos_button",
+      "show_mandatory_legal_disclaimer",
+      "provide_immediate_safety_steps",
+      "geolocate_nearest_police_station",
+      "alert_emergency_contacts_via_api"
+    ],
+    "victim_instructions": {
+      "criminal_assault": [
+        "Stay as quiet as possible if the attacker is nearby.",
+        "Find a lockable room or a safe hiding spot.",
+        "Share your live location with a trusted contact immediately.",
+        "If on a call with 112, keep the line open even if you cannot speak."
+      ],
+      "medical_emergency": [
+        "Check for breathing and pulse.",
+        "In case of heavy bleeding, apply firm pressure with a clean cloth.",
+        "Do not move the victim if a spine/neck injury is suspected.",
+        "Keep the airway clear; if unconscious, place in the recovery position."
+      ],
+      "cyber_crime_victim": [
+        "Take screenshots of all threats, messages, or transaction IDs.",
+        "Immediately call 1930 to report financial fraud during the 'Golden Hour'.",
+        "Change all passwords and enable Two-Factor Authentication (2FA).",
+        "Do not delete evidence even if it is distressing."
+      ],
+      "natural_disaster": [
+        "Drop, Cover, and Hold on during an earthquake.",
+        "Move to higher ground immediately in case of floods.",
+        "Shut off gas and electricity if it is safe to do so."
+      ],
+      "domestic_violence_crisis": [
+        "Identify a safe exit route from the house.",
+        "Keep a small bag with essential documents and cash hidden but accessible.",
+        "Use a 'code word' with a trusted neighbor to signal for help.",
+        "Document injuries with photos if safe to do so."
+      ]
     }
-  ]
+  },
+  "emergency_contacts": {
+    "national": [
+      {"service": "National Emergency (All-in-One)", "phone": "112", "description": "Primary emergency number for Police, Fire, and Ambulance."},
+      {"service": "Police", "phone": "100", "description": "Direct Police Control Room."},
+      {"service": "Fire", "phone": "101", "description": "Fire and Rescue services."},
+      {"service": "Ambulance", "phone": "108 / 102", "description": "Emergency Medical Services."},
+      {"service": "Women Helpline", "phone": "1091 / 181", "description": "24/7 support for women in distress."},
+      {"service": "Child Helpline", "phone": "1098", "description": "Protection and support for children."},
+      {"service": "Cyber Fraud Helpline", "phone": "1930", "description": "Reporting financial cyber crimes immediately."},
+      {"service": "Senior Citizen Helpline", "phone": "14567", "description": "Support and protection for the elderly."},
+      {"service": "Railway Security", "phone": "139", "description": "Emergency help during train travel."},
+      {"service": "Anti-Poison", "phone": "1066", "description": "Poison control and medical advice."},
+      {"service": "Psychological Help (Kiran)", "phone": "1800-599-0019", "description": "Mental health and suicide prevention."}
+    ],
+    "odisha": [
+      {"service": "Odisha State Emergency", "phone": "112", "note": "Integrated ERSS system."},
+      {"service": "Odisha Women Helpline", "phone": "181", "description": "Domestic violence and harassment."},
+      {"service": "Cyber Crime (Odisha Unit)", "phone": "7077798111", "description": "Direct line for Odisha Cyber Police."},
+      {"service": "State Disaster Management (OSDMA)", "phone": "1070", "description": "Cyclone/Flood response."},
+      {"service": "Bhubaneswar Municipal Helpline", "phone": "155335", "description": "Civic safety in the capital."}
+    ],
+    "tamil_nadu": [
+      {"service": "TN Police (Kaval Uthavi)", "phone": "112 / 100", "description": "Tamil Nadu State Police emergency line."},
+      {"service": "TN Women Helpline", "phone": "181", "description": "Dedicated state women's safety line."},
+      {"service": "Health & Medical (TN)", "phone": "104", "description": "24/7 medical advice and blood bank info."},
+      {"service": "TN Disaster Helpline", "phone": "1070", "description": "TNSDMA emergency response."}
+    ],
+    "delhi": [
+      {"service": "Delhi Police Emergency", "phone": "112 / 100", "description": "Centralized Delhi Police control room."},
+      {"service": "Delhi Women Helpline", "phone": "1091 / 1291", "description": "Safety for women in Delhi."},
+      {"service": "Delhi Senior Citizen", "phone": "1291", "description": "Protection for elders in Delhi."},
+      {"service": "Traffic Police (Delhi)", "phone": "1095", "description": "Reporting accidents and traffic issues."}
+    ],
+    "maharashtra": [
+      {"service": "Maharashtra Police", "phone": "112 / 100", "description": "State-wide ERSS."},
+      {"service": "Mumbai Police Control", "phone": "022-22620111", "description": "Direct Mumbai Police assistance."},
+      {"service": "Mumbai Cyber Cell", "phone": "022-22160080", "description": "Cyber crime investigation unit."},
+      {"service": "Maharashtra Women Support", "phone": "181", "description": "State women's help line."}
+    ],
+    "karnataka": [
+      {"service": "Karnataka Emergency Response", "phone": "112", "description": "Integrated Namma 112 system."},
+      {"service": "Bengaluru Police (City)", "phone": "100", "description": "Bengaluru city police dispatch."},
+      {"service": "Karnataka Women Helpline", "phone": "1091", "description": "Protection for women in Karnataka."},
+      {"service": "Karnataka Elder Line", "phone": "14567", "description": "Assistance for senior citizens."}
+    ],
+    "west_bengal": [
+      {"service": "WB Police Emergency", "phone": "100 / 112", "description": "West Bengal state police control."},
+      {"service": "Kolkata Police Emergency", "phone": "100", "description": "Kolkata city specific police line."},
+      {"service": "WB Women Helpline", "phone": "1091", "description": "Women's safety in West Bengal."},
+      {"service": "WB Cyber Crime", "phone": "033-24794035", "description": "Direct cyber reporting unit."}
+    ],
+    "gujarat": [
+      {"service": "Gujarat Emergency (112)", "phone": "112", "description": "Integrated emergency system."},
+      {"service": "Gujarat Women (181 Abhayam)", "phone": "181", "description": "Highly effective women safety line."},
+      {"service": "Gujarat Cyber Cell", "phone": "1930", "description": "State cyber crime reporting."},
+      {"service": "Gujarat Police Control", "phone": "100", "description": "General police assistance."}
+    ],
+    "kerala": [
+      {"service": "Kerala Police Emergency", "phone": "112 / 100", "description": "Direct state police help."},
+      {"service": "Kerala Fire and Rescue", "phone": "101", "description": "Emergency rescue services."},
+      {"service": "Kerala Women Helpline (Mitra)", "phone": "181", "description": "24/7 support for women."},
+      {"service": "Kerala Senior Citizen", "phone": "14567", "description": "Elderly protection line."}
+    ],
+    "andhra_pradesh": [
+      {"service": "AP Emergency Response", "phone": "112", "description": "State-wide ERSS."},
+      {"service": "AP Police (Disha)", "phone": "100 / 112", "description": "Specialized women's safety dispatch."},
+      {"service": "AP Women Helpline", "phone": "181", "description": "Domestic and harassment support."}
+    ],
+    "telangana": [
+      {"service": "Telangana Emergency (112)", "phone": "112", "description": "State-wide emergency system."},
+      {"service": "Hyderabad Police Control", "phone": "100", "description": "Direct city police line."},
+      {"service": "Telangana Women Helpline", "phone": "181", "description": "Support for women in distress."}
+    ],
+    "uttar_pradesh": [
+      {"service": "UP 112 (Prahari)", "phone": "112", "description": "Integrated emergency service."},
+      {"service": "UP Women Power Line", "phone": "1090", "description": "Specialized anti-harassment line for women."},
+      {"service": "UP Police Control", "phone": "100", "description": "Direct police assistance."}
+    ]
+  }
 }
