@@ -1,0 +1,20 @@
+{
+  "cyber_fraud": {
+    "message": "If money was stolen through online fraud, follow these steps immediately:",
+    "steps": [
+      "Call your bank immediately",
+      "Report on cybercrime portal",
+      "Save transaction screenshots"
+    ],
+    "helpline": "1930"
+  },
+  "domestic_violence": {
+    "message": "If you are in danger, move to a safe place immediately.",
+    "steps": [
+      "Call women helpline",
+      "Contact nearby police station",
+      "Preserve evidence"
+    ],
+    "helpline": "1091"
+  }
+}

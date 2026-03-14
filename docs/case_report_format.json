@@ -1,0 +1,13 @@
+{
+  "incident_type": "cyber_fraud",
+  "description": "Money stolen through UPI fraud",
+  "date": "2026-03-15",
+  "time": "18:30",
+  "location": "Chennai",
+  "amount_lost": 15000,
+  "user_phone": "optional",
+  "evidence_available": [
+    "bank transaction screenshot",
+    "UPI id"
+  ]
+}

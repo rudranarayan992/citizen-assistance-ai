@@ -1,0 +1,31 @@
+{
+  "data_collection_policy": {
+    "collect_minimum_data": true,
+    "consent_required": true,
+    "anonymous_mode_available": true
+  },
+
+  "sensitive_data": [
+    "victim_identity",
+    "phone_number",
+    "address",
+    "bank_details",
+    "case_documents"
+  ],
+
+  "storage_policy": {
+    "encryption_required": true,
+    "encryption_standard": "AES-256",
+    "access_control": "role_based"
+  },
+
+  "retention_policy": {
+    "case_data_retention_days": 365,
+    "anonymous_logs_retention_days": 90
+  },
+
+  "legal_frameworks": [
+    "Digital Personal Data Protection Act 2023",
+    "Information Technology Act 2000"
+  ]
+}

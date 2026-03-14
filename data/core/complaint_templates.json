@@ -1,0 +1,14 @@
+{
+  "cyber_fraud": {
+    "title": "Cyber Fraud Complaint",
+    "template": "I am writing to report a cyber fraud incident that occurred on {date} at {time}. An amount of ₹{amount} was fraudulently transferred from my account. I request immediate investigation and action."
+  },
+  "domestic_violence": {
+    "title": "Domestic Violence Complaint",
+    "template": "I am filing a complaint regarding domestic violence that occurred on {date}. I request police protection and legal action under applicable laws."
+  },
+  "sexual_harassment": {
+    "title": "Sexual Harassment Complaint",
+    "template": "I would like to report a case of sexual harassment that occurred on {date}. I request immediate investigation and protection."
+  }
+}

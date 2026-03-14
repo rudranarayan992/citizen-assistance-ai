@@ -1,0 +1,70 @@
+{
+  "incidents": [
+    {
+      "id": "cyber_fraud",
+      "name": "Cyber Fraud",
+      "severity": "high",
+      "emergency": false,
+      "keywords": [
+        "upi fraud",
+        "online scam",
+        "money stolen",
+        "bank fraud",
+        "otp scam"
+      ],
+      "related_laws": [
+        "IPC 420",
+        "IT Act 66C",
+        "IT Act 66D"
+      ],
+      "recommended_action": "report_cybercrime_portal"
+    },
+    {
+      "id": "domestic_violence",
+      "name": "Domestic Violence",
+      "severity": "critical",
+      "emergency": true,
+      "keywords": [
+        "husband beating",
+        "family violence",
+        "domestic abuse"
+      ],
+      "related_laws": [
+        "IPC 498A",
+        "Protection of Women from Domestic Violence Act"
+      ],
+      "recommended_action": "contact_women_helpline"
+    },
+    {
+      "id": "sexual_harassment",
+      "name": "Sexual Harassment",
+      "severity": "high",
+      "emergency": true,
+      "keywords": [
+        "stalking",
+        "molestation",
+        "sexual harassment"
+      ],
+      "related_laws": [
+        "IPC 354",
+        "IPC 354A"
+      ],
+      "recommended_action": "file_police_complaint"
+    },
+    {
+      "id": "police_refusal",
+      "name": "Police Refused FIR",
+      "severity": "medium",
+      "emergency": false,
+      "keywords": [
+        "police refused fir",
+        "police not registering complaint"
+      ],
+      "related_laws": [
+        "CrPC 154",
+        "CrPC 156(3)"
+      ],
+      "recommended_action": "escalate_to_sp"
+    }
+  ]
+}

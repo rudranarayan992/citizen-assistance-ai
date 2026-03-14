@@ -1,0 +1,23 @@
+{
+  "system_components": [
+    "API Gateway",
+    "AI Orchestrator",
+    "Legal Knowledge Base",
+    "Scheme Knowledge Base",
+    "Eligibility Engine",
+    "Crisis Detection Model",
+    "Escalation Engine",
+    "Response Generator",
+    "User Interface"
+  ],
+  "data_sources": [
+    "Government scheme portals",
+    "Legal databases",
+    "Helpline directories"
+  ],
+  "user_interfaces": [
+    "Web portal",
+    "Mobile application",
+    "WhatsApp chatbot"
+  ]
+}

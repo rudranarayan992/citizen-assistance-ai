@@ -1,0 +1,15 @@
+{
+  "emergency_keywords": [
+    "attack",
+    "bleeding",
+    "in danger",
+    "kidnapped",
+    "help me",
+    "violence now"
+  ],
+  "immediate_action": [
+    "Call emergency number 112",
+    "Contact nearest police station",
+    "Seek immediate medical help"
+  ]
+}

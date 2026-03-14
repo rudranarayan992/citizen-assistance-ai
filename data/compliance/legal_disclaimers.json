@@ -1,0 +1,10 @@
+{
+  "default_disclaimer": "This information is for educational purposes only and does not replace professional legal advice.",
+  "disclaimers": {
+    "legal_advice": "This response provides general legal information. Please consult a qualified lawyer for legal advice.",
+    "government_schemes": "Scheme eligibility results are based on available data and may vary depending on official government verification.",
+    "cyber_fraud": "Immediately report financial fraud to your bank and the cybercrime helpline (1930). This platform only provides guidance.",
+    "domestic_violence": "If you are in immediate danger, please contact emergency services or a local helpline immediately.",
+    "police_refusal": "This information explains legal rights under Indian law but does not guarantee legal outcomes."
+  }
+}

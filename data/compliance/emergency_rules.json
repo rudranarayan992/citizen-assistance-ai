@@ -1,0 +1,42 @@
+{
+  "emergency_keywords": [
+    "attack",
+    "bleeding",
+    "help me",
+    "in danger",
+    "kidnapped",
+    "rape",
+    "violence",
+    "threat",
+    "suicide"
+  ],
+
+  "emergency_response": {
+    "priority": "high",
+    "show_contacts": true,
+    "skip_normal_ai_response": true
+  },
+
+  "emergency_contacts": [
+    {
+      "service": "National Emergency",
+      "phone": "112"
+    },
+    {
+      "service": "Police",
+      "phone": "100"
+    },
+    {
+      "service": "Women Helpline",
+      "phone": "1091"
+    },
+    {
+      "service": "Child Helpline",
+      "phone": "1098"
+    },
+    {
+      "service": "Cyber Fraud Helpline",
+      "phone": "1930"
+    }
+  ]
+}
