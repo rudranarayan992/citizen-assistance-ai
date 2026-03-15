@@ -67,6 +67,51 @@
     }
   },
 
+  "mobile_theft": {
+    "incident_type": "Mobile Phone Theft / Lost Phone",
+    "description": "Phone stolen or lost; SIM/IMEI misuse; risk to bank accounts and personal data.",
+
+    "immediate_steps_0_24_hours": [
+      "Call 112 immediately and report the theft at the nearest police station.",
+      "Contact your mobile provider (Airtel, Jio, Vodafone Idea) and request SIM blocking.",
+      "Use the CEIR portal or request police support to block the IMEI across all networks.",
+      "Contact your bank to freeze UPI payments, block debit/credit cards, and change passwords.",
+      "Enable Find My Device (if available) and attempt to locate/lock the phone remotely.",
+      "Keep notes of where and when the phone was stolen and any suspicious activity."
+    ],
+
+    "expected_response_24_hours": {
+      "police_fir": "Police should register FIR and record your statement.",
+      "cctv": "Police should begin collecting nearby CCTV footage.",
+      "control_room": "Police control room should be notified and start search operations."
+    },
+
+    "expected_response_48_hours": {
+      "phone_tracking": "Authorities may attempt to track the phone via IMEI/GPS if active.",
+      "telecom_block": "Telecom providers should block the IMEI and stop all network access.",
+      "police_alert": "Nearby police stations should be alerted and patrols may be increased."
+    },
+
+    "legal_sections_applied": [
+      "IPC Section 381 - Dishonestly receiving stolen property",
+      "IPC Section 379 - Theft"
+    ],
+
+    "if_police_do_not_act": {
+      "step_1": "Contact Superintendent of Police (SP) with your FIR reference number.",
+      "step_2": "File a petition to the District Magistrate asking for action.",
+      "step_3": "File a complaint under CrPC Section 156(3) with the Magistrate."
+    },
+
+    "offline_help_points": [
+      "Nearest police station",
+      "Hospital emergency desk",
+      "Railway police booth",
+      "Bus station police outpost",
+      "Government office reception"
+    ]
+  },
+
   "domestic_violence": {
     "incident_type": "Domestic Violence",
 

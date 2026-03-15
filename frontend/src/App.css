@@ -1,0 +1,68 @@
+.app {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.result h3 {
+  margin-top: 20px;
+}
+
+pre {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 10px;
+  }
+  nav button {
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+  }
+}

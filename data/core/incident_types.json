@@ -108,6 +108,15 @@
 "recommended_action": "Call 1930 and report on cybercrime.gov.in within the 'Golden Hour'."
 },
 {
+"id": "mobile_theft",
+"name": "Mobile Phone Theft / Lost Phone",
+"severity": "high",
+"emergency": true,
+"keywords": ["phone stolen", "mobile stolen", "stolen phone", "lost phone"],
+"related_laws": ["IPC 381", "IPC 379"],
+"recommended_action": "Report to police, block SIM/IMEI immediately, and inform bank."
+},
+{
 "id": "defamation",
 "name": "Defamation",
 "severity": "low",
