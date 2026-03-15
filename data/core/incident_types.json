@@ -42,7 +42,13 @@
 "emergency": true,
 "keywords": ["left child", "abandoned baby", "deserted minor"],
 "related_laws": ["IPC 317 / BNS 93", "Juvenile Justice Act"],
-"recommended_action": "Call 1098 (Childline) and 112 immediately."
+"recommended_action": "Call 1098 (Childline) and 112 immediately.",
+"classification": "Cognizable",
+"risk_audit": ["Contact Childline 1098 immediately", "Inform local police station"],
+"legal_mapping": {"section": "BNS 93", "intent": "Punishment for abandonment of child under 12 years"},
+"action_guide": ["File FIR at police station", "Contact District Child Protection Officer"],
+"escalation": ["Station House Officer (SHO)", "Superintendent of Police (SP)", "Judicial Magistrate"],
+"evidence_kit": ["Photos of abandoned location", "Medical certificate if applicable", "Witness statements"]
 },
 {
 "id": "acid_attack",
@@ -51,7 +57,13 @@
 "emergency": true,
 "keywords": ["acid throw", "chemical attack", "vitriolage"],
 "related_laws": ["IPC 326A / BNS 124", "IPC 326B / BNS 124(2)"],
-"recommended_action": "Emergency medical aid and immediate FIR. Free treatment is mandatory."
+"recommended_action": "Emergency medical aid and immediate FIR. Free treatment is mandatory.",
+"classification": "Cognizable",
+"risk_audit": ["Seek immediate medical treatment", "Do not wash affected area"],
+"legal_mapping": {"section": "BNS 124", "intent": "Voluntarily causing grievous hurt by acid attack"},
+"action_guide": ["File FIR under acid attack laws", "Contact National Commission for Women"],
+"escalation": ["Station House Officer (SHO)", "Superintendent of Police (SP)", "Judicial Magistrate"],
+"evidence_kit": ["Medical reports", "Forensic evidence from clothes", "Witness statements"]
 },
 {
 "id": "adulteration_food",
@@ -105,7 +117,13 @@
 "emergency": false,
 "keywords": ["phishing", "upi fraud", "otp scam"],
 "related_laws": ["IT Act 66D", "BNS 318"],
-"recommended_action": "Call 1930 and report on cybercrime.gov.in within the 'Golden Hour'."
+"recommended_action": "Call 1930 and report on cybercrime.gov.in within the 'Golden Hour'.",
+"classification": "Cognizable",
+"risk_audit": ["Freeze UPI transactions immediately", "Report to bank nodal officer"],
+"legal_mapping": {"section": "BNS 318", "intent": "Cheating and dishonestly inducing delivery of property"},
+"action_guide": ["File complaint on cybercrime.gov.in", "Contact RBI Ombudsman for banking fraud"],
+"escalation": ["Station House Officer (SHO)", "Superintendent of Police (SP)", "Judicial Magistrate"],
+"evidence_kit": ["Transaction screenshots", "Email/SMS records", "Call logs"]
 },
 {
 "id": "mobile_theft",
@@ -114,7 +132,13 @@
 "emergency": true,
 "keywords": ["phone stolen", "mobile stolen", "stolen phone", "lost phone"],
 "related_laws": ["IPC 381", "IPC 379"],
-"recommended_action": "Report to police, block SIM/IMEI immediately, and inform bank."
+"recommended_action": "Report to police, block SIM/IMEI immediately, and inform bank.",
+"classification": "Cognizable",
+"risk_audit": ["Block IMEI on ceir.sancharsaathi.gov.in", "Change all passwords"],
+"legal_mapping": {"section": "BNS 303", "intent": "Punishment for theft"},
+"action_guide": ["File FIR at police station", "Block SIM card with telecom provider"],
+"escalation": ["Station House Officer (SHO)", "Superintendent of Police (SP)", "Judicial Magistrate"],
+"evidence_kit": ["IMEI number", "Purchase bill", "Police report"]
 },
 {
 "id": "defamation",
@@ -132,7 +156,13 @@
 "emergency": true,
 "keywords": ["beating wife", "abuse by husband", "family torture"],
 "related_laws": ["IPC 498A / BNS 85", "DV Act 2005"],
-"recommended_action": "Call 1091 or 112. Seek protection order from Magistrate."
+"recommended_action": "Call 1091 or 112. Seek protection order from Magistrate.",
+"classification": "Cognizable",
+"risk_audit": ["Move to safe location", "Contact women's helpline 1091"],
+"legal_mapping": {"section": "BNS 85", "intent": "Cruelty by husband or relatives"},
+"action_guide": ["File FIR under DV Act", "Apply for protection order"],
+"escalation": ["Station House Officer (SHO)", "Superintendent of Police (SP)", "Judicial Magistrate"],
+"evidence_kit": ["Medical reports", "Photos of injuries", "Witness statements"]
 },
 {
 "id": "dowry_death",
@@ -231,7 +261,13 @@
 "emergency": true,
 "keywords": ["rape", "sexual assault", "forced sex"],
 "related_laws": ["IPC 376 / BNS 64"],
-"recommended_action": "Immediate medical exam (Do not wash/change). File FIR. 112/181."
+"recommended_action": "Immediate medical exam (Do not wash/change). File FIR. 112/181.",
+"classification": "Cognizable",
+"risk_audit": ["Do not wash or change clothes", "Seek medical help immediately"],
+"legal_mapping": {"section": "BNS 64", "intent": "Punishment for rape"},
+"action_guide": ["File FIR at police station", "Medical examination at government hospital"],
+"escalation": ["Station House Officer (SHO)", "Superintendent of Police (SP)", "Judicial Magistrate"],
+"evidence_kit": ["Medical examination report", "Forensic evidence kit", "Clothing and samples"]
 },
 {
 "id": "sc_st_atrocity",
@@ -267,7 +303,13 @@
 "emergency": true,
 "keywords": ["stolen bag", "pickpocket", "missing phone"],
 "related_laws": ["IPC 379 / BNS 303"],
-"recommended_action": "Dial 112. For mobiles, report on Sanchar Saathi portal."
+"recommended_action": "Dial 112. For mobiles, report on Sanchar Saathi portal.",
+"classification": "Cognizable",
+"risk_audit": ["Secure remaining belongings", "Note down stolen items"],
+"legal_mapping": {"section": "BNS 303", "intent": "Punishment for theft"},
+"action_guide": ["File FIR at police station", "Report to insurance if applicable"],
+"escalation": ["Station House Officer (SHO)", "Superintendent of Police (SP)", "Judicial Magistrate"],
+"evidence_kit": ["List of stolen items", "Purchase receipts", "Witness statements"]
 }
 ],
 "healthcare_and_emergency": {

@@ -1,98 +1,386 @@
 {
-"safety_and_crime_reporting": {
-"cyber_crime_portal": "[suspicious link removed]",
-"national_missing_person_search": "https://trackthemissingchild.gov.in",
-"lost_and_found_mobile_blocking": "https://ceir.sancharsaathi.gov.in",
-"emergency_response_system_unified": "https://112.gov.in",
-"anti_human_trafficking_portal": "https://www.google.com/search?q=https://ahtp.mha.gov.in"
-},
-"grievance_and_rights": {
-"centralized_public_grievance_cpgrams": "https://pgportal.gov.in",
-"national_consumer_helpline": "https://consumerhelpline.gov.in",
-"rti_online_filing": "https://rtionline.gov.in",
-"nhrc_complaint_human_rights": "https://www.google.com/search?q=https://hrcnet.nic.in",
-"national_commission_for_women": "http://ncw.nic.in",
-"national_commission_for_protection_of_child_rights": "https://ncpcr.gov.in"
-},
-"legal_and_legislative": {
-"india_code_central_state_acts": "https://www.indiacode.nic.in",
-"e_courts_services": "https://ecourts.gov.in",
-"supremecourt_of_india": "https://www.google.com/search?q=https://main.sci.gov.in",
-"legal_information_institute_of_india": "https://www.google.com/search?q=http://www.liindia.org",
-"legislative_department_drafts": "https://legislative.gov.in",
-"national_legal_services_authority_nalsa": "https://nalsa.gov.in"
-},
-"financial_and_banking": {
-"rbi_ombudsman_complaints": "https://cms.rbi.org.in",
-"sebi_scores_investor_grievance": "https://www.google.com/search?q=https://scores.gov.in",
-"pension_fund_regulatory_pfrda": "https://www.pfrda.org.in",
-"insurance_regulatory_irda": "https://irdai.gov.in",
-"income_tax_efiling": "https://www.incometax.gov.in",
-"gst_portal": "https://www.google.com/search?q=https://www.gst.gov.in",
-"investor_education_and_protection_fund": "https://www.google.com/search?q=https://www.iepf.gov.in"
-},
-"citizen_benefits_and_identity": {
-"my_scheme_portal": "https://www.myscheme.gov.in",
-"digital_locker_digilocker": "https://www.digilocker.gov.in",
-"uidai_aadhaar_services": "https://uidai.gov.in",
-"national_scholarship_portal": "https://scholarships.gov.in",
-"umang_all_in_one_app": "https://web.umang.gov.in",
-"pan_card_services_nsdl": "https://www.google.com/search?q=https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html",
-"voter_services_portal_nvsp": "https://www.nvsp.in"
-},
-"education_and_learning": {
-"swayam_online_courses": "https://swayam.gov.in",
-"nptel_engineering_courses": "https://nptel.ac.in",
-"national_digital_library": "https://www.google.com/search?q=https://ndl.iitkgp.ac.in",
-"diksha_digital_infrastructure_for_teachers": "https://www.google.com/search?q=https://diksha.gov.in",
-"samagra_shiksha_portal": "https://samagra.education.gov.in"
-},
-"agriculture_and_farmers": {
-"pm_kisan_samman_nidhi": "https://pmkisan.gov.in",
-"e_nam_national_agriculture_market": "https://enam.gov.in",
-"soil_health_card_portal": "https://soilhealth.dac.gov.in",
-"agmarknet_price_information": "https://agmarknet.gov.in",
-"pm_fasal_bima_yojana_crop_insurance": "https://pmfby.gov.in"
-},
-"travel_and_transport": {
-"sarathi_driving_license_services": "https://www.google.com/search?q=https://sarathi.parivahan.gov.in",
-"vahan_vehicle_registration_services": "https://vahan.parivahan.gov.in",
-"indian_railways_irctc": "https://www.irctc.co.in",
-"passport_seva_portal": "https://www.passportindia.gov.in",
-"air_sewa_aviation_grievance": "https://airsewa.gov.in"
-},
-"labor_and_employment": {
-"e_shram_portal_unorganized_workers": "https://eshram.gov.in",
-"national_career_service_ncs": "https://www.ncs.gov.in",
-"epfo_provident_fund_services": "https://www.epfindia.gov.in",
-"esic_employees_state_insurance": "https://www.esic.nic.in",
-"shram_suvidha_portal": "https://shramsuvidha.gov.in"
-},
-"business_and_corporate": {
-"mca21_company_filings": "https://www.google.com/search?q=https://www.mca.gov.in",
-"startup_india": "https://www.startupindia.gov.in",
-"udyam_msme_registration": "https://www.google.com/search?q=https://udyamregistration.gov.in",
-"gem_government_e_marketplace": "https://gem.gov.in",
-"intellectual_property_india_patents_trademarks": "https://ipindia.gov.in"
-},
-"land_and_real_estate": {
-"rera_compliance_search": "https://www.google.com/search?q=https://rera.india.gov.in",
-"digital_india_land_records": "https://dilrmp.gov.in",
-"e_registration_property": "https://registration.ind.in",
-"pm_awas_yojana_housing_for_all": "https://pmaymis.gov.in"
-},
-"healthcare_and_emergency": {
-"ayushman_bharat_digital_mission": "https://abdm.gov.in",
-"cowin_vaccination_records": "https://www.google.com/search?q=https://www.cowin.gov.in",
-"national_health_portal": "https://www.google.com/search?q=https://www.nhp.gov.in",
-"blood_bank_availability": "https://www.google.com/search?q=https://www.eraktkosh.in",
-"e_sanjeevani_telemedicine": "https://esanjeevani.in"
-},
-"utility_and_public_services": {
-"saubhagya_electricity_portal": "https://saubhagya.gov.in",
-"jal_jeevan_mission_water": "https://jaljeevanmission.gov.in",
-"pm_ujjwala_yojana_lpg": "https://www.pmuy.gov.in",
-"swachh_bharat_mission_urban": "https://sbmurban.org",
-"postal_services_india_post": "https://www.indiapost.gov.in"
-}
+	"meta": {
+		"last_updated": "2026-03-15",
+		"source": "official government links curated",
+		"notes": "Replaced search-wrapper links with direct official portals; added descriptions, helplines and priority levels for AI recommendations."
+	},
+	"safety_and_crime_reporting": {
+		"cyber_crime_portal": {
+			"url": "https://www.cybercrime.gov.in",
+			"description": "National Cybercrime Reporting Portal for reporting online offences",
+			"phone": "1930",
+			"priority": "immediate"
+		},
+		"national_missing_person_search": {
+			"url": "https://trackthemissingchild.gov.in",
+			"description": "Search and report missing children",
+			"priority": "immediate"
+		},
+		"lost_and_found_mobile_blocking": {
+			"url": "https://ceir.gov.in",
+			"description": "Central Equipment Identity Register (CEIR) — block mobile IMEI",
+			"priority": "immediate"
+		},
+		"emergency_response_system_unified": {
+			"url": "https://112.gov.in",
+			"description": "National Single Emergency Number (112)",
+			"phone": "112",
+			"priority": "emergency"
+		},
+		"anti_human_trafficking_portal": {
+			"url": "https://ahtp.mha.gov.in",
+			"description": "Anti-Human Trafficking Portal (Ministry of Home Affairs)",
+			"priority": "immediate"
+		}
+	},
+	"grievance_and_rights": {
+		"centralized_public_grievance_cpgrams": {
+			"url": "https://pgportal.gov.in",
+			"description": "Centralised Public Grievance Redress And Monitoring System",
+			"priority": "general"
+		},
+		"national_consumer_helpline": {
+			"url": "https://consumerhelpline.gov.in",
+			"description": "Lodge consumer complaints and get advisory",
+			"phone": "1800-11-4000",
+			"priority": "general"
+		},
+		"rti_online_filing": {
+			"url": "https://rtionline.gov.in",
+			"description": "File Right to Information (RTI) requests online",
+			"priority": "general"
+		},
+		"nhrc_complaint_human_rights": {
+			"url": "https://nhrc.nic.in",
+			"description": "National Human Rights Commission complaint portal",
+			"priority": "general"
+		},
+		"national_commission_for_women": {
+			"url": "https://ncw.nic.in",
+			"description": "National Commission for Women — grievance redress",
+			"priority": "general"
+		},
+		"national_commission_for_protection_of_child_rights": {
+			"url": "https://ncpcr.gov.in",
+			"description": "Child rights protection and complaint portal",
+			"priority": "general"
+		}
+	},
+	"legal_and_legislative": {
+		"india_code_central_state_acts": {
+			"url": "https://www.indiacode.nic.in",
+			"description": "Central and state statutory laws (India Code)",
+			"priority": "reference"
+		},
+		"e_courts_services": {
+			"url": "https://ecourts.gov.in",
+			"description": "Case status, cause lists and e-filing links",
+			"priority": "general"
+		},
+		"supremecourt_of_india": {
+			"url": "https://main.sci.gov.in",
+			"description": "Supreme Court of India official site",
+			"priority": "reference"
+		},
+		"legal_information_institute_of_india": {
+			"url": "https://www.liiofindia.org",
+			"description": "Legal research and case law references",
+			"priority": "reference"
+		},
+		"legislative_department_drafts": {
+			"url": "https://legislative.gov.in",
+			"description": "Draft bills and legislative resources",
+			"priority": "reference"
+		},
+		"national_legal_services_authority_nalsa": {
+			"url": "https://nalsa.gov.in",
+			"description": "Free legal aid and awareness services",
+			"priority": "general"
+		}
+	},
+	"financial_and_banking": {
+		"rbi_ombudsman_complaints": {
+			"url": "https://cms.rbi.org.in",
+			"description": "Reserve Bank of India — complaint management system",
+			"priority": "general"
+		},
+		"sebi_scores_investor_grievance": {
+			"url": "https://scores.gov.in",
+			"description": "SEBI SCORES — investor complaints",
+			"priority": "general"
+		},
+		"pension_fund_regulatory_pfrda": {
+			"url": "https://www.pfrda.org.in",
+			"description": "Pension regulatory authority",
+			"priority": "general"
+		},
+		"insurance_regulatory_irda": {
+			"url": "https://irdai.gov.in",
+			"description": "Insurance Regulatory and Development Authority of India",
+			"priority": "general"
+		},
+		"income_tax_efiling": {
+			"url": "https://www.incometax.gov.in",
+			"description": "Income tax e-filing portal",
+			"priority": "general"
+		},
+		"gst_portal": {
+			"url": "https://www.gst.gov.in",
+			"description": "Goods and Services Tax portal",
+			"priority": "general"
+		},
+		"investor_education_and_protection_fund": {
+			"url": "https://www.iepf.gov.in",
+			"description": "Investor education and protection fund resources",
+			"priority": "general"
+		}
+	},
+	"citizen_benefits_and_identity": {
+		"my_scheme_portal": {
+			"url": "https://www.myscheme.gov.in",
+			"description": "Central portal to discover government schemes",
+			"priority": "general"
+		},
+		"digital_locker_digilocker": {
+			"url": "https://www.digilocker.gov.in",
+			"description": "Securely store and share government documents",
+			"priority": "general"
+		},
+		"uidai_aadhaar_services": {
+			"url": "https://uidai.gov.in",
+			"description": "Aadhaar services and UIDAI helplines",
+			"priority": "general"
+		},
+		"national_scholarship_portal": {
+			"url": "https://scholarships.gov.in",
+			"description": "Apply for central scholarships",
+			"priority": "general"
+		},
+		"umang_all_in_one_app": {
+			"url": "https://web.umang.gov.in",
+			"description": "UMANG — unified mobile application for government services",
+			"priority": "general"
+		},
+		"pan_card_services_nsdl": {
+			"url": "https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html",
+			"description": "PAN card and related services (NSDL)",
+			"priority": "general"
+		},
+		"voter_services_portal_nvsp": {
+			"url": "https://www.nvsp.in",
+			"description": "Voter services and registration",
+			"priority": "general"
+		}
+	},
+	"education_and_learning": {
+		"swayam_online_courses": {
+			"url": "https://swayam.gov.in",
+			"description": "Online courses from Indian institutions",
+			"priority": "general"
+		},
+		"nptel_engineering_courses": {
+			"url": "https://nptel.ac.in",
+			"description": "Engineering and technical course content",
+			"priority": "general"
+		},
+		"national_digital_library": {
+			"url": "https://ndl.iitkgp.ac.in",
+			"description": "National Digital Library of India",
+			"priority": "general"
+		},
+		"diksha_digital_infrastructure_for_teachers": {
+			"url": "https://diksha.gov.in",
+			"description": "Teacher resources and digital content",
+			"priority": "general"
+		},
+		"samagra_shiksha_portal": {
+			"url": "https://samagra.education.gov.in",
+			"description": "Unified education portal",
+			"priority": "general"
+		}
+	},
+	"agriculture_and_farmers": {
+		"pm_kisan_samman_nidhi": {
+			"url": "https://pmkisan.gov.in",
+			"description": "Direct benefit transfer for farmers",
+			"priority": "general"
+		},
+		"e_nam_national_agriculture_market": {
+			"url": "https://enam.gov.in",
+			"description": "National agriculture market portal",
+			"priority": "general"
+		},
+		"soil_health_card_portal": {
+			"url": "https://soilhealth.dac.gov.in",
+			"description": "Apply for soil health cards",
+			"priority": "general"
+		},
+		"agmarknet_price_information": {
+			"url": "https://agmarknet.gov.in",
+			"description": "Market prices and arrivals",
+			"priority": "general"
+		},
+		"pm_fasal_bima_yojana_crop_insurance": {
+			"url": "https://pmfby.gov.in",
+			"description": "Crop insurance scheme portal",
+			"priority": "general"
+		}
+	},
+	"travel_and_transport": {
+		"sarathi_driving_license_services": {
+			"url": "https://sarathi.parivahan.gov.in",
+			"description": "Driving licence related services (Parivahan)",
+			"priority": "general"
+		},
+		"vahan_vehicle_registration_services": {
+			"url": "https://vahan.parivahan.gov.in",
+			"description": "Vehicle registration and related services",
+			"priority": "general"
+		},
+		"indian_railways_irctc": {
+			"url": "https://www.irctc.co.in",
+			"description": "Railway reservations and passenger services",
+			"priority": "general"
+		},
+		"passport_seva_portal": {
+			"url": "https://www.passportindia.gov.in",
+			"description": "Passport application and tracking",
+			"priority": "general"
+		},
+		"air_sewa_aviation_grievance": {
+			"url": "https://airsewa.gov.in",
+			"description": "Aviation grievance redressal",
+			"priority": "general"
+		}
+	},
+	"labor_and_employment": {
+		"e_shram_portal_unorganized_workers": {
+			"url": "https://eshram.gov.in",
+			"description": "Registration and benefits for unorganized workers",
+			"priority": "general"
+		},
+		"national_career_service_ncs": {
+			"url": "https://www.ncs.gov.in",
+			"description": "Employment services and job matching",
+			"priority": "general"
+		},
+		"epfo_provident_fund_services": {
+			"url": "https://www.epfindia.gov.in",
+			"description": "EPFO services and claims",
+			"priority": "general"
+		},
+		"esic_employees_state_insurance": {
+			"url": "https://www.esic.nic.in",
+			"description": "Employee State Insurance services",
+			"priority": "general"
+		},
+		"shram_suvidha_portal": {
+			"url": "https://shramsuvidha.gov.in",
+			"description": "Labour law compliance portal",
+			"priority": "general"
+		}
+	},
+	"business_and_corporate": {
+		"mca21_company_filings": {
+			"url": "https://www.mca.gov.in",
+			"description": "Ministry of Corporate Affairs — company filings",
+			"priority": "general"
+		},
+		"startup_india": {
+			"url": "https://www.startupindia.gov.in",
+			"description": "Startup support and resources",
+			"priority": "general"
+		},
+		"udyam_msme_registration": {
+			"url": "https://udyamregistration.gov.in",
+			"description": "MSME / Udyam registration portal",
+			"priority": "general"
+		},
+		"gem_government_e_marketplace": {
+			"url": "https://gem.gov.in",
+			"description": "Government e-marketplace for procurement",
+			"priority": "general"
+		},
+		"intellectual_property_india_patents_trademarks": {
+			"url": "https://ipindia.gov.in",
+			"description": "IP India — patents, trademarks and designs",
+			"priority": "general"
+		}
+	},
+	"land_and_real_estate": {
+		"rera_compliance_search": {
+			"url": "https://rera.india.gov.in",
+			"description": "RERA portal for project & agent registration",
+			"priority": "general"
+		},
+		"digital_india_land_records": {
+			"url": "https://dilrmp.gov.in",
+			"description": "Digital land records initiative",
+			"priority": "general"
+		},
+		"e_registration_property": {
+			"url": "https://registration.ind.in",
+			"description": "Property registration services",
+			"priority": "general"
+		},
+		"pm_awas_yojana_housing_for_all": {
+			"url": "https://pmaymis.gov.in",
+			"description": "Pradhan Mantri Awas Yojana (Housing portal)",
+			"priority": "general"
+		}
+	},
+	"healthcare_and_emergency": {
+		"ayushman_bharat_digital_mission": {
+			"url": "https://abdm.gov.in",
+			"description": "Ayushman Bharat Digital Mission resources",
+			"priority": "general"
+		},
+		"cowin_vaccination_records": {
+			"url": "https://www.cowin.gov.in",
+			"description": "CoWIN vaccination and certificate portal",
+			"priority": "general"
+		},
+		"national_health_portal": {
+			"url": "https://www.nhp.gov.in",
+			"description": "National Health Portal — health advisories and services",
+			"priority": "general"
+		},
+		"blood_bank_availability": {
+			"url": "https://eraktkosh.in",
+			"description": "Blood bank inventory and eRaktKosh portal",
+			"priority": "immediate"
+		},
+		"e_sanjeevani_telemedicine": {
+			"url": "https://esanjeevani.in",
+			"description": "Telemedicine consultation portal",
+			"priority": "general"
+		}
+	},
+	"utility_and_public_services": {
+		"saubhagya_electricity_portal": {
+			"url": "https://saubhagya.gov.in",
+			"description": "Household electrification scheme portal",
+			"priority": "general"
+		},
+		"jal_jeevan_mission_water": {
+			"url": "https://jaljeevanmission.gov.in",
+			"description": "Rural and urban water supply mission",
+			"priority": "general"
+		},
+		"pm_ujjwala_yojana_lpg": {
+			"url": "https://www.pmuy.gov.in",
+			"description": "LPG connections for BPL households",
+			"priority": "general"
+		},
+		"swachh_bharat_mission_urban": {
+			"url": "https://sbmurban.org",
+			"description": "Urban sanitation and waste management",
+			"priority": "general"
+		},
+		"postal_services_india_post": {
+			"url": "https://www.indiapost.gov.in",
+			"description": "India Post services and tracking",
+			"priority": "general"
+		}
+	}
 }

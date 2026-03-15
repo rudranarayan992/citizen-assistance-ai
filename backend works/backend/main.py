@@ -1,13 +1,14 @@
-from serpapi import Client
 import os
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+from serpapi import Client
 import pandas as pd
 from geopy.distance import geodesic
 import json
 import uuid
-from fastapi.middleware.cors import CORSMiddleware
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+import google.generativeai as genai
 from geopy.geocoders import Nominatim
+from fastapi.middleware.cors import CORSMiddleware
 
 # Load SerpApi API key from environment (set SERPAPI_API_KEY). If absent, fall back to the provided default key.
 SERPAPI_API_KEY = os.getenv("SERPAPI_API_KEY")
@@ -16,6 +17,11 @@ if not SERPAPI_API_KEY:
     SERPAPI_API_KEY = "394d4740-2079-11f1-b8af-cf23eff44fec"
     print("Warning: SERPAPI_API_KEY not set in environment; using default key (not recommended for production).")
 os.environ["SERPAPI_API_KEY"] = SERPAPI_API_KEY
+
+# Gemini API setup
+GEMINI_API_KEY = "AIzaSyBSUOUtWf9DwTJqoZjoGgUhBHtRaE-LKqM"
+genai.configure(api_key=GEMINI_API_KEY)
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 app = FastAPI(title="Citizen Assistance AI Platform")
 
@@ -122,6 +128,155 @@ def get_legal_sections(incident_type: str):
             except Exception as e:
                 print(f"Legal sections search failed: {e}")
     return sections if sections else ["Please consult a legal expert"]
+
+# Gemini-based functions for enhanced processing
+
+def detect_incident_type_gemini(description: str) -> str:
+    incident_ids = [item["id"] for item in incident_types]
+    prompt = f"""
+Analyze the following incident description and classify it into one of these categories: {', '.join(incident_ids)}.
+If none match closely, use 'general'.
+
+Description: {description}
+
+Respond with only the category ID.
+"""
+    try:
+        response = model.generate_content(prompt)
+        category = response.text.strip().lower()
+        if category in incident_ids:
+            return category
+        else:
+            return "general"
+    except Exception as e:
+        print(f"Gemini incident detection failed: {e}")
+        return detect_incident_type(description)  # fallback
+
+def score_severity_gemini(description: str) -> int:
+    prompt = f"""
+Rate the severity of this incident on a scale of 1-10, where 1 is minor and 10 is life-threatening or extremely serious.
+
+Description: {description}
+
+Respond with only a number between 1 and 10.
+"""
+    try:
+        response = model.generate_content(prompt)
+        score = int(response.text.strip())
+        return max(1, min(10, score))
+    except Exception as e:
+        print(f"Gemini severity scoring failed: {e}")
+        return score_severity(description)  # fallback
+
+def get_legal_sections_gemini(incident_type: str) -> list:
+    prompt = f"""
+List the relevant Indian legal sections (like IPC, IT Act, etc.) for the incident type: {incident_type}.
+
+Provide a comma-separated list of sections. If unsure, say "Please consult a legal expert".
+"""
+    try:
+        response = model.generate_content(prompt)
+        sections = [s.strip() for s in response.text.split(',') if s.strip()]
+        return sections if sections else ["Please consult a legal expert"]
+    except Exception as e:
+        print(f"Gemini legal sections failed: {e}")
+        return get_legal_sections(incident_type)  # fallback
+
+def get_action_guide_gemini(incident_type: str) -> list:
+    prompt = f"""
+Provide immediate action steps (within 24 hours) for someone who experienced: {incident_type} in India.
+
+List 5-7 concise steps.
+"""
+    try:
+        response = model.generate_content(prompt)
+        steps = [line.strip() for line in response.text.split('\n') if line.strip() and not line.startswith('*')]
+        return steps[:7]
+    except Exception as e:
+        print(f"Gemini action guide failed: {e}")
+        return ["Report to nearest police station", "Seek immediate help if needed"]
+
+def get_helpline_suggestions_gemini(incident_type: str) -> list:
+    prompt = f"""
+Suggest relevant helplines or support services in India for: {incident_type}.
+
+List 3-5 helplines with contact numbers if possible.
+"""
+    try:
+        response = model.generate_content(prompt)
+        suggestions = [line.strip() for line in response.text.split('\n') if line.strip()]
+        return suggestions[:5]
+    except Exception as e:
+        print(f"Gemini helplines failed: {e}")
+        return ["Police: 100", "Women Helpline: 1091"]
+
+def get_escalation_path_gemini(incident_type: str) -> list:
+    prompt = f"""
+If police do not respond adequately to: {incident_type}, what are the escalation steps in India?
+
+List 4-6 escalation steps.
+"""
+    try:
+        response = model.generate_content(prompt)
+        steps = [line.strip() for line in response.text.split('\n') if line.strip()]
+        return steps[:6]
+    except Exception as e:
+        print(f"Gemini escalation failed: {e}")
+        return ["Contact local authorities", "Approach court"]
+
+def get_deep_web_intelligence(incident_type: str, city: str):
+    """
+    Combines SerpApi and Gemini to find specific URLs and local procedures.
+    """
+    queries = [
+        f"how to file {incident_type} in {city} online portal",
+        f"official police circular for {incident_type} reporting India 2026",
+        f"NGOs providing legal aid for {incident_type} in {city}",
+        f"latest BNS sections for {incident_type}"
+    ]
+    
+    web_intel = []
+    client = get_serpapi_client()
+    if client:
+        for q in queries:
+            search = client.search(q=q, location="India", num=2)
+            for res in search.get("organic_results", []):
+                web_intel.append({"title": res.get("title"), "link": res.get("link")})
+    
+    return web_intel
+
+def get_strategic_advice_gemini(incident_type: str, description: str):
+    """
+    Generates a 360-degree legal and tactical strategy.
+    """
+    prompt = f"""
+Act as a high-level Legal Strategist and Citizen Advocate in India. 
+Incident: {incident_type}
+Details: {description}
+
+Provide a structured response in JSON format with the following keys:
+1. 'risk_mitigation': Immediate technical/physical steps to stop further damage.
+2. 'legal_remedies': Specific BNS/BNSS sections and specialized acts.
+3. 'administrative_path': How to deal with bureaucracies (Banks, ISPs, NGOs).
+4. 'judicial_path': How to use the courts if the police fail.
+5. 'evidence_checklist': Specific items to collect (metadata, screenshots, MLC).
+6. 'psychosocial_support': Relevant helplines and NGOs.
+
+Ensure the tone is supportive, direct, and authoritative. 
+Use the new Bharatiya Nyaya Sanhita (BNS) terminology for 2026.
+"""
+    try:
+        response = model.generate_content(prompt)
+        # Parse the JSON from Gemini (ensure it's clean JSON)
+        json_text = response.text.strip()
+        if json_text.startswith('```json'):
+            json_text = json_text[7:]
+        if json_text.endswith('```'):
+            json_text = json_text[:-3]
+        return json.loads(json_text.strip())
+    except Exception as e:
+        print(f"Strategic advice failed: {e}")
+        return {"error": "Could not generate advanced strategy."}
 
 def generate_complaint_template(report, incident_type, nearest, legal_sections):
     template = f"""
@@ -242,11 +397,33 @@ def get_nearest_station(lat: float, lon: float, location_query: str = None):
 
     return _fallback()
 
+def get_relevant_updates(incident_type: str, last_checked: str = None):
+    """Get relevant portal updates for the incident type since last checked."""
+    if not os.path.exists('portal_updates.csv'):
+        return []
+    
+    df = pd.read_csv('portal_updates.csv')
+    
+    # Mapping portals to incident types
+    portal_mapping = {
+        "NALSA": ["rape", "domestic_violence", "child_marriage", "abandonment_of_child"],
+        "CyberCrime": ["cyber_fraud", "mobile_theft"],
+        "SancharSaathi": ["mobile_theft"]
+    }
+    
+    relevant_portals = [p for p, types in portal_mapping.items() if incident_type in types]
+    df_filtered = df[df['portal'].isin(relevant_portals)]
+    
+    if last_checked:
+        df_filtered = df_filtered[df_filtered['scraped_at'] > last_checked]
+    
+    return df_filtered.to_dict('records')
+
 @app.post("/report_incident")
 def report_incident(report: IncidentReport):
     try:
-        incident_type = detect_incident_type(report.description)
-        severity = score_severity(report.description)  # or use report.severity
+        incident_type = detect_incident_type_gemini(report.description)
+        severity = score_severity_gemini(report.description)  # or use report.severity
 
         emergency_mode = any(
             item.get("id") == incident_type and item.get("emergency")
@@ -271,32 +448,12 @@ def report_incident(report: IncidentReport):
         nearest = get_nearest_station(lat, lon, report.location)
         guidance = templates.get(incident_type, {})
         if not guidance:
-            client = get_serpapi_client()
-            if client:
-                try:
-                    results = client.search(
-                        q=f"what to do if {incident_type} in India",
-                        location="India",
-                        num=3
-                    )
-                    guidance_text = ""
-                    if "organic_results" in results:
-                        for result in results["organic_results"]:
-                            guidance_text += result.get("snippet", "") + " "
-                    # Parse into steps
-                    immediate_steps = guidance_text.split(". ")[:5]  # rough split
-                    expected_response = ["Consult local authorities for updates"]
-                    escalation_steps = ["Contact higher police officials", "Approach court"]
-                except Exception as e:
-                    print(f"Guidance search failed: {e}")
-                    immediate_steps = ["Report to nearest police station", "Seek immediate help if needed"]
-                    expected_response = ["Police will investigate"]
-                    escalation_steps = ["Contact local authorities"]
-            else:
-                immediate_steps = ["Report to nearest police station", "Seek immediate help if needed"]
-                expected_response = ["Police will investigate"]
-                escalation_steps = ["Contact local authorities"]
-            legal_sections = get_legal_sections(incident_type)
+            # Use Gemini for guidance
+            immediate_steps = get_action_guide_gemini(incident_type)
+            expected_response = ["Police will investigate within 24-48 hours"]
+            escalation_steps = get_escalation_path_gemini(incident_type)
+            helplines = get_helpline_suggestions_gemini(incident_type)
+            legal_sections = get_legal_sections_gemini(incident_type)
         else:
             legal_sections = guidance.get("legal_sections_applied", [])
             immediate_steps = guidance.get("immediate_steps_0_24_hours", [])
@@ -322,6 +479,8 @@ def report_incident(report: IncidentReport):
                 else ""
             )
 
+        helplines = get_helpline_suggestions_gemini(incident_type)
+
         timeline = resolution_df[resolution_df['incident_type'] == incident_type]['average_resolution_days']
         timeline_est = int(timeline.iloc[0]) if not timeline.empty else 30
         complaint_template = generate_complaint_template(report, incident_type, nearest, legal_sections)
@@ -332,7 +491,8 @@ def report_incident(report: IncidentReport):
             "severity": severity,
             "nearest_station": nearest,
             "timeline_estimate": timeline_est,
-            "created_at": report.date_time
+            "created_at": report.date_time,
+            "last_checked": report.date_time
         }
         return {
             "case_id": case_id,
@@ -345,13 +505,125 @@ def report_incident(report: IncidentReport):
             "nearest_police_station": nearest,
             "expected_response_24_48h": expected_response,
             "escalation_steps": escalation_steps,
+            "helplines": helplines,
             "offline_help_points": offline_help_points,
             "timeline_estimate_days": timeline_est,
             "complaint_template": complaint_template,
+            "relevant_updates": get_relevant_updates(incident_type),
             "disclaimer": disclaimers["disclaimers"].get(incident_type, disclaimers["default_disclaimer"])
         }
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
+
+@app.post("/report_incident_pro")
+def report_incident_pro(report: IncidentReport):
+    # 1. Classification & Severity
+    incident_type = detect_incident_type_gemini(report.description)
+    severity = score_severity_gemini(report.description)
+    
+    # 2. Get the Multi-Dimensional Strategy
+    strategy = get_strategic_advice_gemini(incident_type, report.description)
+    
+    # 3. Dynamic Escalation Logic (The "What if" Path)
+    # We define a hierarchy: SHO -> SP -> Magistrate -> High Court
+    escalation_logic = [
+        {"step": 1, "authority": "Station House Officer (SHO)", "action": "File FIR/Zero FIR", "timeline": "Immediate"},
+        {"step": 2, "authority": "Superintendent of Police (SP)", "action": "Written complaint via Regd Post u/s 154(3) BNSS", "timeline": "After 48h of inaction"},
+        {"step": 3, "authority": "Judicial Magistrate", "action": "Application u/s 156(3) to compel FIR", "timeline": "If SP fails"},
+        {"step": 4, "authority": "High Court", "action": "Writ of Mandamus", "timeline": "Final Resort"}
+    ]
+
+    # 4. Evidence Strategy (Specific to Incident)
+    evidence_guide = strategy.get('evidence_checklist', ["Document all interactions"])
+
+    # 5. Geolocation for Nearest Help
+    try:
+        lat, lon = map(float, report.location.split(','))
+    except ValueError:
+        geolocator = Nominatim(user_agent="citizen-assistance-ai")
+        location = geolocator.geocode(report.location)
+        if location:
+            lat, lon = location.latitude, location.longitude
+        else:
+            raise HTTPException(status_code=400, detail="Invalid location: could not geocode")
+    nearest = get_nearest_station(lat, lon, report.location)
+
+    return {
+        "incident_analysis": {
+            "category": incident_type,
+            "severity": severity,
+            "legal_foundation": strategy.get('legal_remedies')
+        },
+        "action_plan": {
+            "immediate_risk_mitigation": strategy.get('risk_mitigation'),
+            "administrative_steps": strategy.get('administrative_path'),
+            "support_resources": strategy.get('psychosocial_support')
+        },
+        "legal_warfare": {
+            "escalation_protocol": escalation_logic,
+            "judicial_options": strategy.get('judicial_path'),
+            "evidence_preservation": evidence_guide
+        },
+        "document_automation": {
+            "template": generate_complaint_template(report, incident_type, nearest, strategy.get('legal_remedies', []))
+        }
+    }
+
+@app.post("/generate_full_strategy")
+def generate_strategy(report: IncidentReport):
+    # 1. Classification & Severity
+    incident_type = detect_incident_type_gemini(report.description)
+    severity = score_severity_gemini(report.description)
+    
+    # 2. Local Data Fetch
+    local_info = {}
+    for item in incident_types:
+        if item["id"] == incident_type:
+            local_info = item
+            break
+    
+    # 3. Geolocation for City
+    try:
+        lat, lon = map(float, report.location.split(','))
+        geolocator = Nominatim(user_agent="citizen-assistance-ai")
+        location = geolocator.reverse((lat, lon), exactly_one=True, language="en")
+        city_name = location.raw.get("address", {}).get("city", "Delhi") if location else "Delhi"
+    except:
+        city_name = "Delhi"  # fallback
+    
+    # 4. Real-time Web Intelligence (Search)
+    web_links = get_deep_web_intelligence(incident_type, city_name)
+    
+    # 5. Gemini Strategic Synthesis
+    strategy_prompt = f"""
+    Create a 'High-Performance' legal strategy for {incident_type}.
+    Context: {report.description}.
+    Current Law: Bharatiya Nyaya Sanhita (BNS) 2026.
+    
+    Structure the response into:
+    - Step-by-Step Tactical Guide
+    - Evidence Preservation (Technical)
+    - Escalation logic if Police refuse FIR
+    - Top 3 official Gov URLs for this issue
+    """
+    
+    strategy_response = model.generate_content(strategy_prompt)
+    
+    # 6. Nearest Station
+    nearest = get_nearest_station(lat, lon, report.location)
+    
+    return {
+        "incident_analysis": {
+            "category": incident_type,
+            "severity": severity,
+            "local_data": local_info
+        },
+        "tactical_strategy": strategy_response.text,
+        "verified_resources": web_links,
+        "nearest_station": nearest,
+        "relevant_updates": get_relevant_updates(incident_type),
+        "legal_template_ready": True
+    }
 
 @app.get("/nearest_station")
 def nearest_station(lat: float, lon: float):

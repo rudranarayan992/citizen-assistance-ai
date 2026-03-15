@@ -1,0 +1,133 @@
+{
+  "mobile_theft": {
+    "incident_name": "Mobile Phone Theft",
+    "description": "Theft of mobile phone, potentially involving kidnapping or abduction attempts",
+    "immediate_actions": [
+      "Block your SIM card immediately",
+      "Block device IMEI through your service provider",
+      "Change all banking and social media passwords",
+      "Report to nearest police station",
+      "Call emergency services if in danger"
+    ],
+    "next_24_hours": [
+      "File FIR at nearest police station",
+      "Contact your mobile service provider",
+      "Check bank statements for unauthorized transactions"
+    ],
+    "next_48_hours": [
+      "Follow up with police on FIR status",
+      "Install tracking apps if phone is recovered",
+      "Change all online account passwords"
+    ],
+    "legal_support": {
+      "sections": ["IPC 379 (Theft)", "IPC 406 (Criminal breach of trust)"],
+      "courts": "Local magistrate court",
+      "compensation": "May be eligible under victim compensation scheme"
+    },
+    "expected_resolution_time": "7-30 days for basic investigation"
+  },
+  "cyber_fraud": {
+    "incident_name": "Cyber Fraud/Online Scam",
+    "description": "Financial fraud through online means like UPI, OTP scams, etc.",
+    "immediate_actions": [
+      "Stop all transactions immediately",
+      "Contact your bank and report the fraud",
+      "Change all passwords and PINs",
+      "Report to cyber crime cell"
+    ],
+    "next_24_hours": [
+      "File complaint with bank",
+      "Report to local police station",
+      "Contact cyber crime helpline"
+    ],
+    "next_48_hours": [
+      "Follow up with bank on refund process",
+      "File FIR if amount is significant",
+      "Monitor accounts for further suspicious activity"
+    ],
+    "legal_support": {
+      "sections": ["IT Act 66C", "IT Act 66D", "IPC 420"],
+      "courts": "Cyber crime courts",
+      "compensation": "Bank may refund, government schemes available"
+    },
+    "expected_resolution_time": "15-60 days depending on complexity"
+  },
+  "domestic_violence": {
+    "incident_name": "Domestic Violence",
+    "description": "Physical, emotional, or psychological abuse within family",
+    "immediate_actions": [
+      "Move to a safe location",
+      "Call women's helpline (1091)",
+      "Contact trusted family/friends",
+      "Document injuries with photos"
+    ],
+    "next_24_hours": [
+      "File complaint at nearest police station",
+      "Seek medical attention if injured",
+      "Contact NGO for support"
+    ],
+    "next_48_hours": [
+      "Apply for protection order",
+      "Consult lawyer for divorce/maintenance",
+      "Arrange temporary shelter if needed"
+    ],
+    "legal_support": {
+      "sections": ["DV Act 2005", "IPC 498A", "IPC 323"],
+      "courts": "Family court or magistrate court",
+      "compensation": "Maintenance and protection orders available"
+    },
+    "expected_resolution_time": "30-90 days for protection orders"
+  },
+  "sexual_harassment": {
+    "incident_name": "Sexual Harassment",
+    "description": "Unwanted sexual advances, stalking, or molestation",
+    "immediate_actions": [
+      "Move to a safe place",
+      "Call police (100) or women's helpline (1091)",
+      "Do not confront the perpetrator",
+      "Preserve evidence (clothes, messages)"
+    ],
+    "next_24_hours": [
+      "File FIR at police station",
+      "Seek medical examination",
+      "Contact counselor or NGO"
+    ],
+    "next_48_hours": [
+      "Follow up with police investigation",
+      "Consult lawyer for legal options",
+      "Document all communications"
+    ],
+    "legal_support": {
+      "sections": ["POSH Act 2013", "IPC 354", "IPC 509"],
+      "courts": "Local criminal court",
+      "compensation": "May be eligible for compensation"
+    },
+    "expected_resolution_time": "30-180 days depending on case"
+  },
+  "kidnapping": {
+    "incident_name": "Kidnapping/Abduction",
+    "description": "Forced abduction or kidnapping attempt",
+    "immediate_actions": [
+      "Call emergency services (112) immediately",
+      "Try to note vehicle details if possible",
+      "Scream for help and attract attention",
+      "Contact family/friends if you escape"
+    ],
+    "next_24_hours": [
+      "File FIR at nearest police station",
+      "Provide detailed description to police",
+      "Seek medical and psychological support"
+    ],
+    "next_48_hours": [
+      "Cooperate with police investigation",
+      "Follow safety advice from authorities",
+      "Consider changing routines temporarily"
+    ],
+    "legal_support": {
+      "sections": ["IPC 363", "IPC 364", "IPC 365"],
+      "courts": "Sessions court",
+      "compensation": "Victim compensation schemes available"
+    },
+    "expected_resolution_time": "Varies greatly, can take months"
+  }
+}
