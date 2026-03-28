@@ -1,0 +1,35 @@
+{
+  "f4b42443337ff96b640694b8c7495bcd4b81b8a4befe799a9efb98f6cd6e3e78": {
+    "description": "Incident type not found in database.",
+    "immediate_actions": [
+      "Call 112 for emergency assistance"
+    ],
+    "next_24_hours": [],
+    "next_48_hours": [],
+    "legal_support": {},
+    "expected_resolution_time": "Unknown",
+    "web_sources": []
+  },
+  "70aad1b708d7bab7d43bf688abb9205d65f1fcc0e0006d535cdc4ca27b1b286f": {
+    "description": "Incident type not found in database.",
+    "immediate_actions": [
+      "Call 112 for emergency assistance"
+    ],
+    "next_24_hours": [],
+    "next_48_hours": [],
+    "legal_support": {},
+    "expected_resolution_time": "Unknown",
+    "web_sources": []
+  },
+  "431bb5f483ab74c70454ada2e7a902c844b2a0b941ce56099a669eb3a6ffce73": {
+    "description": "Incident type not found in database.",
+    "immediate_actions": [
+      "Call 112 for emergency assistance"
+    ],
+    "next_24_hours": [],
+    "next_48_hours": [],
+    "legal_support": {},
+    "expected_resolution_time": "Unknown",
+    "web_sources": []
+  }
+}

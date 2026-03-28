@@ -1,0 +1,40 @@
+{
+  "volunteers": [
+    {
+      "name": "Amit Kumar",
+      "category": "cyber_fraud",
+      "city": "Cuttack",
+      "role": "Cybersecurity Volunteer",
+      "phone": "+91-99370-12345",
+      "email": "amit.kumar@cyberhelp.in",
+      "notes": "Helps victims of online banking scams and UPI fraud."
+    },
+    {
+      "name": "Dr. Sunita Rao",
+      "category": "domestic_violence",
+      "city": "Cuttack",
+      "role": "Counselor",
+      "phone": "+91-94370-54321",
+      "email": "sunita.rao@safehome.org",
+      "notes": "Connects victims to shelters and legal aid in Odisha."
+    },
+    {
+      "name": "Rakesh Patel",
+      "category": "mobile_theft",
+      "city": "Bhubaneswar",
+      "role": "Community Liaison",
+      "phone": "+91-97770-11223",
+      "email": "rakesh.patel@helpdesk.org",
+      "notes": "Supports victims in filing FIRs and coordinating with police."
+    },
+    {
+      "name": "Online Support Volunteer",
+      "category": "general",
+      "city": "Remote",
+      "role": "Online Support Coordinator",
+      "phone": "+91-99999-99999",
+      "email": "online@citizensupport.org",
+      "notes": "Provides remote assistance and coordination. IP: 157.41.240.85"
+    }
+  ]
+}

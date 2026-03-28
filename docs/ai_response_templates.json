@@ -1,212 +1,292 @@
+
 {
-  "cyber_fraud": {
-    "incident_type": "Cyber Fraud / UPI Scam",
-    "description": "Unauthorized online transaction, UPI fraud, OTP scam, phishing, or bank fraud.",
-    
-    "immediate_steps_0_24_hours": [
-      "Immediately contact your bank customer support and request to freeze or block the affected account.",
-      "Call the national cybercrime helpline: 1930.",
-      "Report the fraud at https://cybercrime.gov.in.",
-      "Take screenshots of transaction details, SMS alerts, and bank statements.",
-      "Preserve evidence such as phone numbers, links, messages, or emails used by the scammer.",
-      "Visit the nearest police station and file a First Information Report (FIR).",
-      "Inform the UPI provider or payment app used (Google Pay, PhonePe, Paytm etc)."
+  "mobile_theft": {
+    "incident_name": "Mobile Phone Theft / Lost Phone / Snatching",
+    "description": "Your mobile phone has been lost, stolen, or snatched. This creates serious risk of misuse of your SIM, banking apps, UPI apps, social media accounts, photos, and personal data. Quick action in the first few hours can prevent financial loss and identity theft.",
+    "immediate_actions": [
+      "If the phone was snatched with force or you feel in danger, CALL 112 or 100 immediately and move to a safe, crowded place.",
+      "Go to the nearest police station as soon as possible and report the theft/loss; request registration of FIR and note the DD/GD entry number if FIR is delayed.",
+      "Call your mobile operator (Jio/Airtel/Vi/BSNL) and request IMMEDIATE SIM blocking to prevent OTP misuse.",
+      "Block the phone’s IMEI through the CEIR portal: https://www.ceir.gov.in (use 'Block Stolen/Lost Mobile' option) or request the police to initiate IMEI blocking.",
+      "Log in from another device and use 'Find My Device' (Android: https://www.google.com/android/find) or 'Find My iPhone' (https://www.icloud.com/find) to try to locate, lock, or erase the phone.",
+      "Immediately change passwords for email, banking, UPI, and social media accounts that were logged in on the phone.",
+      "Check your SMS and email (from another device) for any suspicious OTPs or banking alerts and inform your bank if you see anything unusual."
     ],
-
-    "expected_response_24_hours": {
-      "bank_action": "Bank may attempt to freeze the transferred funds if they are still in the destination account.",
-      "cybercrime_portal": "Complaint is registered and assigned to cybercrime investigators.",
-      "police_station": "Police should register FIR under IT Act and IPC fraud sections."
-    },
-
-    "expected_response_48_hours": {
-      "investigation_status": "Cybercrime team may start tracing the receiving bank account and IP address used in the transaction.",
-      "bank_followup": "Banks may initiate reversal process if funds are recoverable.",
-      "victim_expectation": "Victim should receive acknowledgment of complaint and case reference number."
-    },
-
-    "legal_sections_applied": [
-      "IT Act Section 66C - Identity Theft",
-      "IT Act Section 66D - Cheating by personation using computer resources",
-      "IPC Section 420 - Cheating and Fraud"
+    "next_24_hours": [
+      "Ensure an FIR is registered at the police station (for theft/robbery/snatching) and obtain a copy of the FIR for insurance and legal purposes.",
+      "Submit a request on the CEIR portal (https://www.ceir.gov.in) with IMEI, FIR details, and your ID proof to block the phone across all Indian networks.",
+      "Contact your bank(s) and payment apps (GPay/PhonePe/Paytm/BHIM) to block UPI, cards, and mobile banking access linked to the stolen phone.",
+      "Review recent bank, UPI, and wallet transactions to confirm that no unauthorized debits have occurred.",
+      "If insured, inform your mobile insurance provider within the timeframe mentioned in the policy and collect all documents required for claim (FIR copy, invoice, ID proof)."
     ],
-
-    "government_expected_action_time": {
-      "FIR_registration": "Immediately or within the same day.",
-      "initial_investigation": "Within 48 hours.",
-      "bank_account_trace": "3 to 7 days depending on bank response.",
-      "full_investigation": "30 to 90 days."
-    },
-
-    "if_police_do_not_act": {
-      "step_1": "Send written complaint to Superintendent of Police (SP).",
-      "step_2": "Submit complaint online to cybercrime portal again with FIR refusal evidence.",
-      "step_3": "File complaint before Magistrate under CrPC Section 156(3)."
-    },
-
-    "escalation_contacts": [
-      {
-        "role": "Superintendent of Police",
-        "contact_type": "email"
-      },
-      {
-        "role": "Cyber Crime Department",
-        "contact_type": "online_portal"
-      },
-      {
-        "role": "District Magistrate",
-        "contact_type": "official_email"
+    "next_48_hours": [
+      "Follow up with the Investigating Officer (IO) at the police station about CCTV collection, suspect tracing, and IMEI tracking status.",
+      "Verify with your telecom operator and/or CEIR that the IMEI has been successfully blocked.",
+      "Obtain a duplicate SIM card from your operator (with valid ID proof and FIR copy) and update your mobile number in bank, UPI, and important accounts if required.",
+      "Monitor your bank accounts, UPI apps, credit cards, and email for any further suspicious activity and immediately report anything unusual.",
+      "Preserve all documents: FIR copy, CEIR blocking acknowledgment, telecom confirmations, insurance claim receipts, and any communication with authorities."
+    ],
+    "legal_support": {
+      "sections": [
+        "IPC 379 – Theft (punishment up to 3 years, or fine, or both)",
+        "IPC 356 – Assault or criminal force in attempt to commit theft of property carried by a person",
+        "IPC 392 – Robbery (if phone was snatched using force or fear; punishment up to 10 years and fine)",
+        "IPC 411 – Dishonestly receiving stolen property (applies to those who buy/sell stolen phones)"
+      ],
+      "courts": "Normally tried in the local Judicial Magistrate Court; robbery/snatching cases may be tried in Sessions Court depending on severity.",
+      "compensation": "You may claim compensation under the State Victim Compensation Scheme (through District Legal Services Authority) and/or via mobile insurance if you have a valid policy.",
+      "official_resources": {
+        "helplines": [
+          "112 – All-India Emergency Number",
+          "100 – Police Control Room",
+          "14422 – CEIR (for IMEI-related queries)"
+        ],
+        "websites": [
+          {
+            "name": "CEIR – Central Equipment Identity Register (Block IMEI)",
+            "url": "https://www.ceir.gov.in"
+          },
+          {
+            "name": "India Code – Bare Acts (IPC, CrPC etc.)",
+            "url": "https://www.indiacode.nic.in"
+          },
+          {
+            "name": "National Consumer Helpline",
+            "url": "https://consumerhelpline.gov.in"
+          }
+        ]
       }
-    ],
-
-    "investigation_timeline_estimate": {
-      "initial_case_registration": "1 day",
-      "digital evidence collection": "7 days",
-      "bank coordination": "14 days",
-      "case progress review": "30 days"
-    }
+    },
+    "expected_resolution_time": "7–30 days for basic investigation and IMEI blocking; recovery of the device may take longer or may not be possible in many cases."
   },
 
-  "mobile_theft": {
-    "incident_type": "Mobile Phone Theft / Lost Phone",
-    "description": "Phone stolen or lost; SIM/IMEI misuse; risk to bank accounts and personal data.",
-
-    "immediate_steps_0_24_hours": [
-      "Call 112 immediately and report the theft at the nearest police station.",
-      "Contact your mobile provider (Airtel, Jio, Vodafone Idea) and request SIM blocking.",
-      "Use the CEIR portal or request police support to block the IMEI across all networks.",
-      "Contact your bank to freeze UPI payments, block debit/credit cards, and change passwords.",
-      "Enable Find My Device (if available) and attempt to locate/lock the phone remotely.",
-      "Keep notes of where and when the phone was stolen and any suspicious activity."
+  "cyber_fraud": {
+    "incident_name": "Cyber Fraud / Online Scam / UPI Fraud",
+    "description": "Money has been lost or unauthorized transactions have occurred through UPI, net banking, cards, phishing links, fake customer care calls, OTP scams, or other online fraud methods. Reporting within the first few hours greatly improves the chance of freezing the funds.",
+    "immediate_actions": [
+      "Immediately call your bank’s customer care and request to BLOCK/hold your affected account, card, or UPI ID; ask them to raise a fraud dispute and give you a complaint/reference number.",
+      "Call the National Cybercrime Helpline 1930 as soon as possible and report the fraudulent transaction(s) with exact time and amount.",
+      "Report the incident on the National Cybercrime Reporting Portal: https://cybercrime.gov.in and save the acknowledgment/complaint ID.",
+      "Do NOT share any further OTP, PIN, password, or card details with anyone, even if they claim to be from the bank, RBI, police, or any authority.",
+      "Change passwords and PINs for your net banking, UPI apps, email accounts, and any financial apps immediately from a safe device.",
+      "Take clear screenshots of: transaction details, bank SMS alerts, UPI app confirmations, chat/call logs with fraudsters, and any phishing websites or messages involved."
     ],
-
-    "expected_response_24_hours": {
-      "police_fir": "Police should register FIR and record your statement.",
-      "cctv": "Police should begin collecting nearby CCTV footage.",
-      "control_room": "Police control room should be notified and start search operations."
-    },
-
-    "expected_response_48_hours": {
-      "phone_tracking": "Authorities may attempt to track the phone via IMEI/GPS if active.",
-      "telecom_block": "Telecom providers should block the IMEI and stop all network access.",
-      "police_alert": "Nearby police stations should be alerted and patrols may be increased."
-    },
-
-    "legal_sections_applied": [
-      "IPC Section 381 - Dishonestly receiving stolen property",
-      "IPC Section 379 - Theft"
+    "next_24_hours": [
+      "Visit the nearest police station and request registration of an FIR for cyber fraud/online cheating; attach all available evidence and mention your cybercrime portal complaint ID (if generated).",
+      "Submit a written complaint/e-mail to your bank’s branch or official grievance e-mail enclosing transaction details and requesting urgent fund recall/freeze.",
+      "Monitor all your bank accounts, cards, and UPI history for any additional unauthorized transactions, and report them immediately if found.",
+      "If your primary email ID was compromised, secure it (change password, enable 2FA) as it is often used to reset banking/UPI passwords."
     ],
-
-    "if_police_do_not_act": {
-      "step_1": "Contact Superintendent of Police (SP) with your FIR reference number.",
-      "step_2": "File a petition to the District Magistrate asking for action.",
-      "step_3": "File a complaint under CrPC Section 156(3) with the Magistrate."
+    "next_48_hours": [
+      "Follow up with your bank’s fraud department, quoting your complaint/ reference number, and ask whether the beneficiary bank has been contacted and whether funds are frozen.",
+      "Check the cybercrime portal (https://cybercrime.gov.in) for status updates using your acknowledgment ID and cooperate with any requests from cyber cell/police.",
+      "Visit or contact the Investigating Officer (IO) at the cyber cell/police station to provide additional details such as call recordings, full URLs, or screenshots in original quality.",
+      "If the bank is unresponsive or refuses to help, prepare to file a complaint with the RBI CMS portal: https://cms.rbi.org.in (Banking Ombudsman)."
+    ],
+    "legal_support": {
+      "sections": [
+        "IT Act 66C – Identity theft (wrongful use of password, digital signatures, etc.)",
+        "IT Act 66D – Cheating by personation using computer resources",
+        "IPC 419 – Cheating by personation",
+        "IPC 420 – Cheating and dishonestly inducing delivery of property",
+        "IPC 120B – Criminal conspiracy (if multiple persons involved)"
+      ],
+      "courts": "Cybercrime cases are generally investigated by cyber cells and tried in Magistrate Courts; serious or high-value frauds may go to higher courts depending on circumstances.",
+      "compensation": "Partial or full refund may be possible if the bank and beneficiary bank successfully freeze the funds in time. Additionally, victims can seek compensation under state Victim Compensation Schemes and through civil or consumer forums in some situations.",
+      "official_resources": {
+        "helplines": [
+          "1930 – National Cybercrime Helpline (24/7)",
+          "112 – Emergency (if threats or extortion involved)"
+        ],
+        "websites": [
+          {
+            "name": "National Cybercrime Reporting Portal",
+            "url": "https://cybercrime.gov.in"
+          },
+          {
+            "name": "RBI Complaint Management System (Banking Ombudsman)",
+            "url": "https://cms.rbi.org.in"
+          },
+          {
+            "name": "India Code – IT Act & IPC Sections",
+            "url": "https://www.indiacode.nic.in"
+          }
+        ]
+      }
     },
-
-    "offline_help_points": [
-      "Nearest police station",
-      "Hospital emergency desk",
-      "Railway police booth",
-      "Bus station police outpost",
-      "Government office reception"
-    ]
+    "expected_resolution_time": "15–60 days for primary investigation and bank coordination; actual recovery of funds depends heavily on how quickly the incident was reported (within hours vs. days)."
   },
 
   "domestic_violence": {
-    "incident_type": "Domestic Violence",
-
-    "immediate_steps_0_24_hours": [
-      "Move to a safe location away from the abuser if possible.",
-      "Call emergency services at 112.",
-      "Call Women Helpline at 1091.",
-      "Seek help from trusted friends or relatives.",
-      "Visit nearest police station and file complaint.",
-      "Request protection order under Domestic Violence Act."
+    "incident_name": "Domestic Violence / Family Abuse",
+    "description": "Physical, emotional, sexual, or economic abuse by spouse, partner, or family members within the home. This can include beating, threats, humiliation, controlling behaviour, dowry harassment, or being thrown out of the house. Your safety and that of your children are the first priority.",
+    "immediate_actions": [
+      "If you are in immediate physical danger, LEAVE the violent environment if possible and move to a safe place (trusted neighbour, friend, relative, or public place).",
+      "Call 112 (emergency) or the Women’s Helpline 1091 / 181 to request immediate police assistance and protection.",
+      "If injured, go to the nearest government hospital or clinic and clearly inform the doctor that the injuries are due to domestic violence; request a medico‑legal report and keep all medical documents.",
+      "Document the abuse: take photographs of injuries, damaged property, and any visible signs of violence; save threatening messages or call recordings if available.",
+      "Contact a trusted friend, relative, or women’s NGO to inform them about the violence and seek emotional and practical support."
     ],
-
-    "expected_response_24_hours": {
-      "police_action": "Police should register complaint and provide immediate protection if danger exists.",
-      "legal_action": "Protection officer may be assigned.",
-      "medical_help": "Victim can receive medical support and documentation."
-    },
-
-    "expected_response_48_hours": {
-      "court_action": "Protection order request may be processed.",
-      "police_followup": "Police may question accused and gather evidence."
-    },
-
-    "legal_sections_applied": [
-      "Protection of Women from Domestic Violence Act 2005",
-      "IPC Section 498A - Cruelty by husband or relatives"
+    "next_24_hours": [
+      "Visit the nearest police station (or women’s police station, where available) and file a written complaint describing incidents with dates and details; ask for an FIR under relevant IPC sections if serious violence or dowry harassment is involved.",
+      "Contact the local Protection Officer under the Protection of Women from Domestic Violence Act, 2005 (usually at the District Magistrate office or District Legal Services Authority) to apply for protection orders, residence orders, and monetary relief.",
+      "Seek medical check‑up even for older injuries, as medical records can be important evidence in court and for protection orders.",
+      "If you have children, discuss temporary safe arrangements for them with trusted family or through child protection/women’s shelter services."
     ],
-
-    "government_expected_action_time": {
-      "complaint_registration": "Immediately",
-      "protection_order": "Within 48 hours",
-      "court_hearing": "Within 7 days"
+    "next_48_hours": [
+      "Apply for a Protection Order, Residence Order, and Monetary Relief under the Domestic Violence Act through the Protection Officer or a lawyer.",
+      "Contact the District Legal Services Authority (DLSA) to request FREE legal aid if you cannot afford a lawyer.",
+      "Consider speaking to a counselor or psychologist through NGOs, hospitals, or helplines for emotional and mental health support.",
+      "If you were forced out of your shared household, seek immediate legal help to claim your right to reside there or secure safe alternative accommodation."
+    ],
+    "legal_support": {
+      "sections": [
+        "Protection of Women from Domestic Violence Act, 2005 – provides protection orders, residence rights, maintenance, and compensation.",
+        "IPC 498A – Cruelty by husband or his relatives (dowry harassment, serious mental/physical cruelty).",
+        "IPC 323 – Voluntarily causing hurt.",
+        "IPC 506 – Criminal intimidation (threats).",
+        "Dowry Prohibition Act, 1961 – for dowry demands and related harassment."
+      ],
+      "courts": "Domestic Violence Act proceedings are generally handled by the Magistrate Court; criminal charges under IPC (e.g., 498A, 323, 506) are tried in criminal courts; family courts may handle divorce, maintenance, and custody issues.",
+      "compensation": "You may obtain monetary relief and compensation orders under the Domestic Violence Act, claim maintenance under CrPC 125 or relevant personal laws, and seek support under state Victim Compensation Schemes.",
+      "official_resources": {
+        "helplines": [
+          "1091 – Women’s Helpline",
+          "181 – Women in Distress Helpline (available in many states)",
+          "112 – National Emergency Number",
+          "7827170170 – National Commission for Women (NCW) Helpline"
+        ],
+        "websites": [
+          {
+            "name": "National Commission for Women",
+            "url": "http://ncw.nic.in"
+          },
+          {
+            "name": "National Legal Services Authority (Free Legal Aid)",
+            "url": "https://nalsa.gov.in"
+          },
+          {
+            "name": "India Code – Domestic Violence Act & IPC Sections",
+            "url": "https://www.indiacode.nic.in"
+          }
+        ]
+      }
     },
-
-    "if_police_do_not_act": {
-      "step_1": "Report the issue to Superintendent of Police.",
-      "step_2": "Contact State Women Commission.",
-      "step_3": "File complaint before Magistrate."
-    }
+    "expected_resolution_time": "Emergency protection (interim orders) can be obtained within days to a few weeks; full protection, maintenance, and other orders may take 30–90 days or more depending on the court’s load and complexity of the case."
   },
 
   "sexual_harassment": {
-    "incident_type": "Sexual Harassment / Stalking",
-
-    "immediate_steps_0_24_hours": [
-      "Move to a safe location.",
-      "Contact police helpline 112.",
-      "Save messages, photos, or evidence of harassment.",
-      "Report to nearest police station."
+    "incident_name": "Sexual Harassment / Stalking / Molestation",
+    "description": "Unwanted sexual comments, touching, advances, stalking (online or offline), obscene messages, or any behaviour of a sexual nature that makes you feel unsafe, humiliated, or threatened. This includes harassment in public places, at work, online, or by known persons.",
+    "immediate_actions": [
+      "Move immediately to a safe, well‑lit, and preferably crowded place away from the harasser.",
+      "Call 112 or 100 if you feel unsafe or are being followed, stalked, or physically harassed.",
+      "Do NOT destroy or delete evidence: save messages, call logs, photos, social media posts, e‑mails, and note locations, dates, and times.",
+      "Avoid confronting the harasser alone, especially in isolated places; instead, seek help from nearby people, security, or authorities.",
+      "If any physical contact or assault occurred, go to a hospital as soon as possible for medical examination and ask for a medico‑legal report; keep all related documents safely."
     ],
-
-    "expected_response_24_hours": {
-      "police_action": "Police should register FIR.",
-      "investigation": "Statements of victim recorded."
-    },
-
-    "expected_response_48_hours": {
-      "suspect_action": "Police may summon or arrest suspect.",
-      "case_documentation": "Evidence review and witness statements."
-    },
-
-    "legal_sections_applied": [
-      "IPC Section 354A - Sexual Harassment",
-      "IPC Section 354D - Stalking"
+    "next_24_hours": [
+      "Go to the nearest police station (or women’s police station where available) and lodge an FIR describing each incident with date, time, place, and what exactly was done/said.",
+      "Provide police with all available evidence, such as screenshots, chat logs, photos, videos, or voice recordings, and details of any witnesses.",
+      "If the harassment occurred at the workplace and your organization has 10 or more employees, file a written complaint with the Internal Committee (IC) under the POSH Act, 2013 within 3 months of the incident.",
+      "Inform a trusted friend, family member, or colleague about the harassment so that you have emotional support and potential witnesses if needed."
     ],
-
-    "government_expected_action_time": {
-      "FIR_registration": "Immediate",
-      "suspect_interrogation": "48 hours",
-      "charge_sheet": "60 to 90 days"
-    }
+    "next_48_hours": [
+      "Follow up with the police to obtain the FIR number and contact details of the Investigating Officer (IO).",
+      "If a workplace IC complaint has been filed, note the names of committee members and the expected timeline of enquiry (POSH Act mandates completion within 90 days).",
+      "Preserve an organized folder of all evidence and notes of each incident, including how it affected your work, studies, or mental health (this helps in legal and internal inquiries).",
+      "Consider contacting a women’s NGO, counselor, or legal aid service for assistance in navigating the legal process and ensuring your rights at work or in public spaces are respected."
+    ],
+    "legal_support": {
+      "sections": [
+        "IPC 354 – Assault or criminal force to woman with intent to outrage her modesty.",
+        "IPC 354A – Sexual harassment (physical advances, demands for sexual favours, showing pornography, sexually coloured remarks).",
+        "IPC 354D – Stalking (including online/cyber stalking).",
+        "IPC 509 – Word, gesture, or act intended to insult the modesty of a woman.",
+        "IT Act 67 and 67A – Publication or transmission of obscene or sexually explicit material in electronic form.",
+        "POSH Act 2013 – Prevention of Sexual Harassment of Women at Workplace (civil remedy within organizations)."
+      ],
+      "courts": "Criminal cases are tried in local criminal courts or special fast‑track courts (in some jurisdictions). Workplace harassment inquiries are first handled internally by the Internal Committee (IC) under POSH; their findings may be challenged before appropriate courts or labour authorities if needed.",
+      "compensation": "Victims may be entitled to compensation under POSH (from the employer or harasser), under state Victim Compensation Schemes, and by orders of criminal or civil courts depending on the harm suffered.",
+      "official_resources": {
+        "helplines": [
+          "1091 – Women’s Helpline",
+          "181 – State Women’s Helpline (where available)",
+          "112 – Emergency (if in immediate danger)",
+          "7827170170 – National Commission for Women Helpline"
+        ],
+        "websites": [
+          {
+            "name": "National Commission for Women – Online Complaint",
+            "url": "http://ncw.nic.in"
+          },
+          {
+            "name": "National Cybercrime Reporting Portal (for online harassment)",
+            "url": "https://cybercrime.gov.in"
+          },
+          {
+            "name": "India Code – IPC & POSH Act Texts",
+            "url": "https://www.indiacode.nic.in"
+          }
+        ]
+      }
+    },
+    "expected_resolution_time": "Police investigation and filing of charge sheet may take 60–90 days; Internal Committee (POSH) inquiries must typically be completed within 90 days; trial duration varies widely from a few months to over a year depending on complexity and court workload."
   },
 
-  "police_refusal": {
-    "incident_type": "Police Refused FIR",
-
-    "immediate_steps_0_24_hours": [
-      "Request written reason for refusal.",
-      "Record date, time, and officer name.",
-      "Submit written complaint to Station House Officer."
+  "kidnapping": {
+    "incident_name": "Kidnapping / Abduction / Attempted Kidnapping",
+    "description": "A person is forcibly taken away, confined, or attempts are made to abduct them against their will. This is a grave and life‑threatening crime requiring immediate police intervention.",
+    "immediate_actions": [
+      "If you are currently in danger or witnessing a kidnapping attempt, CALL 112 or 100 IMMEDIATELY and provide as many details as you can (location, vehicle number, direction of travel, description of persons).",
+      "Shout loudly for help, attract the attention of nearby people, and try to move towards crowded or public areas if possible and safe.",
+      "If you are a victim who has escaped, go straight to the nearest police station or secure public place (hospital, shop, railway station, etc.) and seek help.",
+      "Try to remember and note down critical details: vehicle type and colour, registration number (even partial), number of kidnappers, their physical description, clothes, language spoken, and the route taken.",
+      "Inform your family or trusted contacts as soon as safely possible to let them know your location and situation."
     ],
-
-    "expected_response_48_hours": {
-      "escalation": "Send complaint to Superintendent of Police."
+    "next_24_hours": [
+      "Ensure that an FIR is registered at the nearest police station immediately with complete details of the incident, suspects, vehicle, witnesses, and any ransom calls or messages.",
+      "If the victim is missing, provide police with recent photographs, physical description, clothes worn at the time of disappearance, known friends, routine routes, and any possible motives or threats.",
+      "If there are injuries or physical assault, go to a hospital for a full medical examination and ensure the incident is recorded as a medico‑legal case.",
+      "Preserve all call logs, SMS, WhatsApp messages, emails, or recordings related to threats or ransom demands and share them only with police."
+    ],
+    "next_48_hours": [
+      "Remain in close contact with the Investigating Officer (IO) and provide any new information immediately; cooperate fully with police procedures, including identification parades if conducted.",
+      "Avoid sharing sensitive details about the investigation or ransom demands on social media or with unknown people, as it can endanger the victim.",
+      "Follow safety guidance from the police regarding communication with the kidnappers (if ransom is demanded); do not attempt independent rescue without police support.",
+      "If the victim is recovered, consider seeking psychological counseling and medical check‑up, especially for children or persons who have suffered trauma."
+    ],
+    "legal_support": {
+      "sections": [
+        "IPC 363 – Punishment for kidnapping.",
+        "IPC 364 – Kidnapping or abducting in order to murder or for ransom (very serious offense).",
+        "IPC 364A – Kidnapping for ransom, etc. (punishment may extend to death or life imprisonment).",
+        "IPC 365 – Kidnapping or abducting with intent to secretly and wrongfully confine a person."
+      ],
+      "courts": "Kidnapping and abduction cases are serious offenses usually tried in the Sessions Court. Special courts may be involved if the victim is a child (POCSO Act, JJ Act, etc.).",
+      "compensation": "Victims or their families may be eligible for compensation under State Victim Compensation Schemes, especially where there is serious physical or mental harm.",
+      "official_resources": {
+        "helplines": [
+          "112 – National Emergency Number (first priority)",
+          "100 – Police Control Room",
+          "1098 – Childline (if the victim is a child)"
+        ],
+        "websites": [
+          {
+            "name": "Emergency Response Support System (ERSS)",
+            "url": "https://112.gov.in"
+          },
+          {
+            "name": "India Code – IPC & Related Laws",
+            "url": "https://www.indiacode.nic.in"
+          },
+          {
+            "name": "National Commission for Protection of Child Rights (for child victims)",
+            "url": "https://ncpcr.gov.in"
+          }
+        ]
+      }
     },
-
-    "legal_sections_applied": [
-      "CrPC Section 154 - FIR Registration",
-      "CrPC Section 156(3) - Magistrate power to order investigation"
-    ],
-
-    "if_police_do_not_act": {
-      "step_1": "Send complaint to SP office.",
-      "step_2": "Approach Magistrate court.",
-      "step_3": "File complaint to Human Rights Commission."
-    }
+    "expected_resolution_time": "Rescue operations are treated as urgent and may happen within hours to days; full investigation and trial can take several months to years depending on complexity and evidence."
   }
 }
